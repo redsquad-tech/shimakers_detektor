@@ -104,14 +104,21 @@ const createTargetDS = (filename) => {
         let dataset = [];
         for (let row of data.split(/\n/)) {
             let repos;
-            let currentCell;
+            let comment;
+            let author;
 
             for (let [index, cell] of row.split(/\t/).entries()) {
-                currentCell = cell;
-                if (index === 3) repos = await getUserRepos(cell);                    
+                
+                if (index === 2) {
+                    comment = cell;
+                }
+                if (index === 3) {
+                    author = cell;
+                    repos = await getUserRepos(cell);
+                }
             }
 
-            repos && repos.forEach((r) => dataset.push(r + '\t' + currentCell));
+            repos && repos.forEach((r) => dataset.push(r + '\t' + comment + '\t' + author));
             console.log('in dataset', dataset);
         }
 
