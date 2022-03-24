@@ -30,6 +30,6 @@ Creates result csv file
 |dangerous_user| https://github.com/dangerous_user/dangerous_project | description | dangerous_user_name |
 
 `output:`
-| repo link | username |
-|:----------------------------------------------------:|:-----------------:|
+| repo link | comment | username |
+|:----------------------------------------------------:|:-----------------:|:-----------------:|
 | https://github.com/dangerous_user/dangerous_project |dangerous_user_name|
