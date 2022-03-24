@@ -8,7 +8,7 @@ install dependencies
 
 ##### npm start
 
-Launches createTargetDS(DS_file_variable: filepath) function and creates dataset with repo links and usernames
+Launches createTargetDS(DS_file_variable: filepath) function and creates dataset
 
 #### Variables
 
@@ -32,4 +32,4 @@ Creates result csv file
 `output:`
 | repo link | comment | username |
 |:----------------------------------------------------:|:-----------------:|:-----------------:|
-| https://github.com/dangerous_user/dangerous_project |dangerous_user_name|
+| https://github.com/dangerous_user/dangerous_project | dangerous because of ... |dangerous_user_name|
