@@ -1,8 +1,14 @@
 # shimakers_detektor
 
+Script index.js creates dataset with repo links and usernames of possibly dangerous repositories
+
 ##### npm install
 
 install dependencies
+
+##### npm start
+
+Launches createTargetDS(DS_file_variable: filepath) function and creates dataset with repo links and usernames
 
 #### Variables
 
