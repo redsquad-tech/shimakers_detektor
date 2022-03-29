@@ -39,11 +39,40 @@ module.exports.getAuthorFromPull = async (parametrs) => {
 
         const response = await getGHRequest(url);
         const data = response.data;
-
+        
         return data.user.login;
     }
     
     catch (e) {console.log('getAuthorFromPull is failed:\n', e.message)};
+}
+
+module.exports.getAuthorFromPullCommit = async (parametrs, commitSHA) => {
+    try {
+        let url =`https://api.github.com/repos/${parametrs}`;
+
+        const response = await getGHRequest(url);
+
+        const data = response.data;
+
+        const commit = data.filter((commit) => commit.sha === commitSHA)[0];
+
+        return commit.author.login;
+    }
+    
+    catch (e) {console.log('getAuthorFromPullCommit is failed:\n', e.message)};
+}
+
+module.exports.getAuthorFromIssue = async (parametrs) => {
+    try {
+        let url =`https://api.github.com/repos/${parametrs}`;
+
+        const response = await getGHRequest(url);
+        const data = response.data;
+
+        return data.user.login;
+    }
+    
+    catch (e) {console.log('getAuthorFromIssue is failed:\n', e.message)};
 }
 
 // Get author's actual repos
@@ -51,6 +80,7 @@ const checkActualCommits = async (commits) => {
     try {
         const response = await getGHRequest(commits);   
         const data = response.data;
+        
         const hasActualCommits = data.filter((commit) => new Date(commit.commit.author.date) > new Date("2022-02-24"));
     
         return hasActualCommits.length;
