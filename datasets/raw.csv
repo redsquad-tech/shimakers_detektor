@@ -40,7 +40,8 @@
 17.03.2022 21:56:52	Малварь, шифровальщик или иные фатальные угрозы	https://github.com/Sateviss	https://github.com/Sateviss/sateviss.github.io/blob/master/ddos.html	Гитхаб игнорит абузы с ру айпи
 18.03.2022 10:46:13	Малварь, шифровальщик или иные фатальные угрозы	https://github.com/Yaffle/EventSource	https://github.com/Yaffle/EventSource/commit/de137927e13d8afac153d2485152ccec48948a7a	https://github.com/Yaffle/EventSource/issues/199
 18.03.2022 11:52:48	Бан аккаунтов	Oracle cloud infrastructure	https://www.oracle.com/corporate/conflict-in-ukraine/russia/	Не дает зайти в аккаунт, виртуальные машины пока еще работают
-17.03.2022 19:33:22	Политические лозунги	pnpm	https://github.com/pnpm/pnpm/commit/3c328ec465c597ff558c1f38afbfe2a0c1b02a83 , https://github.com/pnpm/pnpm/commit/0066c11b9779971349d323c9fffced0271535cb7	Заблокировал сайт pnpm.io для РФ и РБ
+17.03.2022 19:33:22	Политические лозунги	pnpm	https://github.com/pnpm/pnpm/commit/3c328ec465c597ff558c1f38afbfe2a0c1b02a83	Заблокировал сайт pnpm.io для РФ и РБ
+17.03.2022 19:33:22	Политические лозунги	pnpm	https://github.com/pnpm/pnpm/commit/0066c11b9779971349d323c9fffced0271535cb7	Заблокировал сайт pnpm.io для РФ и РБ
 18.03.2022 12:10:55	Политические лозунги	Unity Ads	https://unity.com/products/unity-ads	Понимаю, что этот случай не относится к опенсорс продуктам, однако он тоже важен, в особенности для разработчиков игр. После встраивания рекламы Unity Ads в мобильную игру, пользователям из России игра начинают показывать вместо рекламы политические лозунги о свержении конституционного строя. Причём на устройстве разработчика ничего подобного не проявляется Мы чудом заметили это благодаря нашим игрокам бета-тестировщикам, которые получили обновление перед основным выпуском.
 18.03.2022 11:04:05	Малварь, шифровальщик или иные фатальные угрозы	Onefetch	https://github.com/o2sh/onefetch	При установке программы подменяет библиотеку libgcc_s.so.1, система перестает отвечать и после перезагрузки система выдает ошибку kernel panic.
 18.03.2022 6:24:09	Судя по всему координационный центр атак	IT-ARMY-of-Ukraine-Resources-in-English	https://github.com/danieldanielecki/IT-ARMY-of-Ukraine-Resources-in-English	Подборка целей и инструментов для атак по инфраструктуре РФ
@@ -83,7 +84,7 @@
 17.03.2022 14:03:28	Политические лозунги	evolution	https://github.com/evolution-cms/evolution/commit/1c586bc76f739264dcf0482530945875fa444b77	Полит лозунг в cms
 17.03.2022 14:06:54	Политические лозунги	React docs	не знаю	ru.reactjs.org и reactjs.org
 17.03.2022 14:11:39	Политические лозунги	Набор обновлений UpdatePack7R2 для Windows 7 SP1 и Server 2008 R2 SP1	https://blog.simplix.info/update7/	;Мартовское обновление не устанавливается. По информации в ченджлоге: История изменений
-22.3.11 … Из-за военного вторжения работа программы на территории России и Беларуси ограничена;
+22.3.11 … Из-за военного вторжения работа программы на территории России и Беларуси ограничена;				
 17.03.2022 14:15:18	Политические лозунги	Docusaurus	https://github.com/facebook/docusaurus/pull/6811	Опенсорс проект http://docusaurus.io/
 17.03.2022 14:15:45	Политические лозунги	Codeception for PHP	https://github.com/Codeception/Codeception/commit/eefe1abc60500c0516b85131cbbfbb9a22899db4	при запуске в консоли выводится "Codeception PHP Testing Framework v4.1.31 https://helpukrainewin.org"
 17.03.2022 14:23:55	Политические лозунги	Evolution CMS	https://github.com/evolution-cms/evolution/commit/1c586bc76f739264dcf0482530945875fa444b77	После обновления на релизы Evolution CMS 3.1.10 и Evolution CMS 1.4.17 полит. лозунг в админке
@@ -138,7 +139,8 @@
 18.03.2022 10:38:12	Политические лозунги	Symfony	-	Баннер в поддержку Украины в шапке сайта
 18.03.2022 11:29:02	Политические лозунги	react-create-app	https://github.com/facebook/create-react-app/commit/fd8c5f7b1b1d19d10d24cc2f9fdfc110585dc030	docs: add homepage banner in support of Ukraine (#12113)
 18.03.2022 11:37:25	Политические лозунги	Portable ASCII for PHP	https://github.com/voku/portable-ascii	used e.g. in Laravel Core
-18.03.2022 11:43:36	Политические лозунги	T-Regx	https://github.com/T-Regx/T-Regx/commit/88c05aa62f1931f31e252c68c4084f22336e4552 и https://github.com/T-Regx/T-Regx/commit/7e4812ab0a0c562c0d3e024926c71c24a98fa3b4	StandWithUkraine banner
+18.03.2022 11:43:36	Политические лозунги	T-Regx	https://github.com/T-Regx/T-Regx/commit/88c05aa62f1931f31e252c68c4084f22336e4552	StandWithUkraine banner
+18.03.2022 11:43:36	Политические лозунги	T-Regx	https://github.com/T-Regx/T-Regx/commit/7e4812ab0a0c562c0d3e024926c71c24a98fa3b4	StandWithUkraine banner
 18.03.2022 11:55:30	Политические лозунги	https://www.npmjs.com/package/event-source-polyfill	https://github.com/Yaffle/EventSource/commit/de137927e13d8afac153d2485152ccec48948a7a	Через 15 секунд после открытия страницы алертит призыв прекратить происходящее и открывает change.org
 18.03.2022 12:04:01	Политические лозунги	Сobian backup	https://github.com/jomael/cobianbackup	В последней обнове прилетели призывы свергать власть
 18.03.2022 12:12:03	Политические лозунги	snap winbox	https://github.com/panaceya/winbox	Политические лозунги

@@ -37,12 +37,22 @@ module.exports.addAuthor = async (gitDataset) => {
         for (let [index, cell] of row.split(/\t/).entries()) {
             if (index === 1) {
                 if ((/pull/).test(cell)) {
-                    url = formatURLHandlers.formRequestURL(cell, 'pulls');
-                    username = await GH_API_Handlers.getAuthorFromPull(url);
+                    if ((/commits/).test(cell)) {
+                        urlData = formatURLHandlers.formRequestURL(cell, 'pullCommit');
+                        username = await GH_API_Handlers.getAuthorFromPullCommit(urlData.commits, urlData.commitSHA);
+                    }
+                    else {
+                        url = formatURLHandlers.formRequestURL(cell, 'pulls');
+                        username = await GH_API_Handlers.getAuthorFromPull(url);
+                    }
                 }
                 else if ((/commit/).test(cell)) {
                     url = formatURLHandlers.formRequestURL(cell, 'commits');
                     username = await GH_API_Handlers.getAuthorFromCommit(url);
+                }
+                else if ((/issues/).test(cell)) {
+                    url = formatURLHandlers.formRequestURL(cell, 'issues');
+                    username = await GH_API_Handlers.getAuthorFromIssue(url);
                 }
                 else {
                     username = cell.replace('https://github.com/', '').split('/')[0];
@@ -62,7 +72,8 @@ module.exports.addAuthor = async (gitDataset) => {
 module.exports.createResultDS = async (fullDataset) => {
     console.log('createResultDS');
 
-    let dataset = [];
+    let authors = new Set();
+    let dataset = ['suspicious repo link\tcomment\tusername\n'];
 
     for (let row of fullDataset.split(/\n/)) {
         let repos;
@@ -76,7 +87,9 @@ module.exports.createResultDS = async (fullDataset) => {
             }
             if (index === 3) {
                 author = cell;
-                repos = await GH_API_Handlers.getUserRepos(cell);
+                repos = !authors.has(author) && await GH_API_Handlers.getUserRepos(cell);
+
+                authors.add(author);
             }
         }
 

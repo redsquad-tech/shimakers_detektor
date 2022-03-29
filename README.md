@@ -25,8 +25,8 @@ Launches dataset creation steps:
 
 `input:` string
 
-`output:`
-| repo link | comment | username |
+`output:` string with dataset kind of
+| suspicious repo link | comment | username |
 |:----------------------------------------------------:|:-----------------:|:-----------------:|
 | https://github.com/dangerous_user/dangerous_project **{explicitly: \t}**| dangerous because of ... \t|dangerous_user_name \n|
 
@@ -34,8 +34,8 @@ Launches dataset creation steps:
 
 `input:` string
 
-`output:`
-| repo link | comment | username |
+`output:` string with dataset kind of
+| suspicious repo link | comment | username |
 |:----------------------------------------------------:|:-----------------:|:-----------------:|
 | https://github.com/dangerous_user/dangerous_projectA \t| dangerous because of ... \t|dangerous_user_name1 \n|
 | https://github.com/dangerous_user/dangerous_projectB \t| dangerous because of ... \t|dangerous_user_name1 \n|
@@ -45,7 +45,7 @@ Launches dataset creation steps:
 
 5. fileHandlers.writeCSV(filename: string, dataset: string): writes the dataset in the csv file
 
-#### Required variables
+### Required variables
 
 in .env file should be:
 
@@ -59,4 +59,4 @@ Name of the final file in the datasets folder
 
 ##### PAT
 
-Variable for GH API key (is needed to increase limit of requsts per hour)
+Variable for GH API key (is needed to increase limit of requsts per hour). Should be NOT expired
