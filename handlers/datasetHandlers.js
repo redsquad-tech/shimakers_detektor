@@ -69,8 +69,8 @@ module.exports.addAuthor = async (gitDataset) => {
     return dataset.filter((r) => r).join('\n');
 }
 
-module.exports.getReposFromUserCommits = async (fullDataset) => {
-    console.log('getReposFromUserCommits');
+module.exports.getReposFromUserPush = async (fullDataset) => {
+    console.log('getReposFromUserPush');
 
     let authors = new Set();
     let dataset = ['suspicious repo link\tcomment\tusername'];
@@ -93,7 +93,7 @@ module.exports.getReposFromUserCommits = async (fullDataset) => {
             }
         }
 
-        console.log('getReposFromUserCommits author:', author);
+        console.log('getReposFromUserPush author:', author);
 
         repos && repos.forEach((r) => dataset.push(r + '\t' + comment + '\t' + author));
     }
