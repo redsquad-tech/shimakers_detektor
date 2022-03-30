@@ -75,39 +75,22 @@ module.exports.getAuthorFromIssue = async (parametrs) => {
     catch (e) {console.log('getAuthorFromIssue is failed:\n', e.message)};
 }
 
-// Get author's actual repos
-const checkActualCommits = async (commits) => {
+//  From pushEvent get repos with author's contribution
+module.exports.getReposFromPushEvents = async (username) => {
     try {
-        const response = await getGHRequest(commits);   
-        const data = response.data;
-        
-        const hasActualCommits = data.filter((commit) => new Date(commit.commit.author.date) > new Date("2022-02-24"));
-    
-        return hasActualCommits.length;
-    }
-    catch (e) {
-        console.log('checkActualCommits faild', e.message);
-    }   
-}
-
-module.exports.getUserRepos = async (username) => {
-    try {
-        let url = `https://api.github.com/users/${username}`;
+        let url = `https://api.github.com/users/${username}/events`;
+        let repoList = new Set();
 
         const response = await getGHRequest(url);
         const data = response.data;
-        
-        const responseRepos = await getGHRequest(data.repos_url);
-        const dataRepos = responseRepos.data;
-    
-        let actualRepos = [];
-        for (const repo of dataRepos) {
-            await checkActualCommits(repo.commits_url.slice(0, -6)) > 0 && actualRepos.push(repo.html_url);
-          }
-    
-        return actualRepos;
+
+        const actualEvents = data.filter((event) =>  event.type === 'PushEvent' && new Date(event.created_at) > new Date("2022-02-24"))
+
+        actualEvents.forEach((event) => repoList.add(`https://github.com/${event.repo.url.split('/').slice(-2).join('/')}`));
+
+        return repoList;
     }
     catch (e) {
-        console.log('getUserRepos faild', e.message);
+        console.log('getReposFromPushEvents faild', e.message);
     }
 }

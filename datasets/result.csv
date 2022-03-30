@@ -1,193 +1,245 @@
 suspicious repo link	comment	username
-
-https://github.com/Arriven/arriven.github.io	получает конфиг с ip адресами и начинает флудить трафиком	Arriven
 https://github.com/Arriven/db1000n	получает конфиг с ip адресами и начинает флудить трафиком	Arriven
-https://github.com/Arriven/db1000n-config-generator	получает конфиг с ip адресами и начинает флудить трафиком	Arriven
-https://github.com/Arriven/utls	получает конфиг с ip адресами и начинает флудить трафиком	Arriven
+https://github.com/db1000n-coordinators/LoadTestConfig	получает конфиг с ip адресами и начинает флудить трафиком	Arriven
 https://github.com/vnestoruk/ban-dera	Я минут пять искал заветную кнопочку. На репу пожаловаться нельзя. На автора можно.	vnestoruk
+https://github.com/NewEXE/ban-dera	Я минут пять искал заветную кнопочку. На репу пожаловаться нельзя. На автора можно.	vnestoruk
 https://github.com/erkexzcx/disconnectme-pihole	Досилка	erkexzcx
-https://github.com/erkexzcx/gas_monitor	Досилка	erkexzcx
 https://github.com/erkexzcx/stoppropaganda	Досилка	erkexzcx
-https://github.com/opengs/uashield	Досилка	opengs
-https://github.com/opengs/uashield-targeter	Досилка	opengs
-https://github.com/opengs/uashieldchecker	Досилка	opengs
 https://github.com/opengs/uashieldtargets	Досилка	opengs
-https://github.com/opengs/uashieldtargets-test	Досилка	opengs
-https://github.com/ajax-lives/bazarr	досилка	ajax-lives
+https://github.com/opengs/uashield	Досилка	opengs
 https://github.com/ajax-lives/NoRussian	досилка	ajax-lives
 https://github.com/metastck/putler-doser	Досилка	metastck
 https://github.com/RusskijKorablIdiNaxuj/RusskijKorablIdiNaxuj	Досилка	RusskijKorablIdiNaxuj
-https://github.com/RusskijKorablIdiNaxuj/stoppropaganda	Досилка	RusskijKorablIdiNaxuj
-https://github.com/0x77dev/0x77dev	Досилка	0x77dev
-https://github.com/0x77dev/donate	Досилка	0x77dev
-https://github.com/0x77dev/stoprussia	Досилка	0x77dev
-https://github.com/0x77dev/web	Досилка	0x77dev
+https://github.com/dstack-js/dstack	Досилка	0x77dev
 https://github.com/smrt-fascismu/RuskiBot-Reddit	Досилка	smrt-fascismu
 https://github.com/muterussia/MuteRussia	Досилка	muterussia
+https://github.com/muterussia/muterussia	Досилка	muterussia
 https://github.com/ievgen11/ddoser	Досилка	ievgen11
-https://github.com/webgtx/dxtlib	ПО разработанное и настроенное для атак ресурсов РФ	webgtx
-https://github.com/webgtx/learn-js	ПО разработанное и настроенное для атак ресурсов РФ	webgtx
+https://github.com/webgtx/USPACE	ПО разработанное и настроенное для атак ресурсов РФ	webgtx
+https://github.com/dsxninja/.github	ПО разработанное и настроенное для атак ресурсов РФ	webgtx
+https://github.com/dxh-team/CDUW	ПО разработанное и настроенное для атак ресурсов РФ	webgtx
+https://github.com/dxh-team/hostenv	ПО разработанное и настроенное для атак ресурсов РФ	webgtx
 https://github.com/webgtx/php-modules	ПО разработанное и настроенное для атак ресурсов РФ	webgtx
-https://github.com/webgtx/security_motion_sensor	ПО разработанное и настроенное для атак ресурсов РФ	webgtx
+https://github.com/webgtx/dxtlib	ПО разработанное и настроенное для атак ресурсов РФ	webgtx
 https://github.com/ch33r10/ch33r10	Страница по координации и сбору IT - разведданных нацеленных на атаки инфраструктуры РФ	ch33r10
-https://github.com/ch33r10/DEFCON29-BTV-ThreatReportRoulette	Страница по координации и сбору IT - разведданных нацеленных на атаки инфраструктуры РФ	ch33r10
 https://github.com/ch33r10/EnterprisePurpleTeaming	Страница по координации и сбору IT - разведданных нацеленных на атаки инфраструктуры РФ	ch33r10
 https://github.com/ch33r10/SunflowerCon	Страница по координации и сбору IT - разведданных нацеленных на атаки инфраструктуры РФ	ch33r10
-https://github.com/alexander-danilenko/attacker	ПО для нагрузочного тестирования, ориентированное на использования в DDoS атаках на ресурсы РФ	alexander-danilenko
-https://github.com/alexander-danilenko/fedora-environment	ПО для нагрузочного тестирования, ориентированное на использования в DDoS атаках на ресурсы РФ	alexander-danilenko
-https://github.com/alexander-danilenko/ua-loadtest	ПО для нагрузочного тестирования, ориентированное на использования в DDoS атаках на ресурсы РФ	alexander-danilenko
-https://github.com/alexander-danilenko/uashield	ПО для нагрузочного тестирования, ориентированное на использования в DDoS атаках на ресурсы РФ	alexander-danilenko
+https://github.com/ch33r10/DEFCON29-BTV-ThreatReportRoulette	Страница по координации и сбору IT - разведданных нацеленных на атаки инфраструктуры РФ	ch33r10
 https://github.com/alexander-danilenko/ubuntu-environment	ПО для нагрузочного тестирования, ориентированное на использования в DDoS атаках на ресурсы РФ	alexander-danilenko
+https://github.com/alexander-danilenko/ua-loadtest	ПО для нагрузочного тестирования, ориентированное на использования в DDoS атаках на ресурсы РФ	alexander-danilenko
 https://github.com/dimboknv/p24	Телеграм бот для массовой рассылки жалоб на телеграм-каналы	dimboknv
 https://github.com/dimboknv/tg-stand-with-ukraine	Телеграм бот для массовой рассылки жалоб на телеграм-каналы	dimboknv
-https://github.com/mytechnotalent/Fundamental-Go	Сетевой сканер. Инструмент используемый для проведения хакерских атак. На странице добавлен тег Ukraine.	mytechnotalent
-https://github.com/sanfarans/hack4ukraine	Предположительно - ПО разрабатываемое для проведения хакерских атак на РФ	sanfarans
-https://github.com/tweedge/phossil	Фреймворк для мониторинга ресурсов при проведении атак на ресурсы РФ и ведения информационной разведки	tweedge
-https://github.com/tweedge/ru-ok	Фреймворк для мониторинга ресурсов при проведении атак на ресурсы РФ и ведения информационной разведки	tweedge
+https://github.com/mytechnotalent/turbo-attack	Сетевой сканер. Инструмент используемый для проведения хакерских атак. На странице добавлен тег Ukraine.	mytechnotalent
+https://github.com/mytechnotalent/tinygo-pico	Сетевой сканер. Инструмент используемый для проведения хакерских атак. На странице добавлен тег Ukraine.	mytechnotalent
+https://github.com/mytechnotalent/Reverse-Engineering	Сетевой сканер. Инструмент используемый для проведения хакерских атак. На странице добавлен тег Ukraine.	mytechnotalent
 https://github.com/tweedge/tldr	Фреймворк для мониторинга ресурсов при проведении атак на ресурсы РФ и ведения информационной разведки	tweedge
-https://github.com/tweedge/tweedge	Фреймворк для мониторинга ресурсов при проведении атак на ресурсы РФ и ведения информационной разведки	tweedge
-https://github.com/tweedge/websights	Фреймворк для мониторинга ресурсов при проведении атак на ресурсы РФ и ведения информационной разведки	tweedge
+https://github.com/tweedge/ru-ok	Фреймворк для мониторинга ресурсов при проведении атак на ресурсы РФ и ведения информационной разведки	tweedge
+https://github.com/tweedge/phossil	Фреймворк для мониторинга ресурсов при проведении атак на ресурсы РФ и ведения информационной разведки	tweedge
 https://github.com/d1sUa/DisDDos	Инструмент для DDoS атак, призывы к атакам инфраструктуры РФ	d1sUa
-https://github.com/UA-IT-Army/aggressor-sites	Досилка	UA-IT-Army
-https://github.com/UA-IT-Army/cfb-nodejs	Досилка	UA-IT-Army
-https://github.com/UA-IT-Army/openvpn-install	Досилка	UA-IT-Army
-https://github.com/UA-IT-Army/Proxifier-For-Linux	Досилка	UA-IT-Army
+https://github.com/almerico/bombardier	Организация DoS-атак на инфраструктуру России: Госуслуги и проч.	almerico
 https://github.com/UA-IT-Army/uait-toolkit	Досилка	UA-IT-Army
+https://github.com/UA-IT-Army/cfb-nodejs	Досилка	UA-IT-Army
+https://github.com/UA-IT-Army/Proxifier-For-Linux	Досилка	UA-IT-Army
 https://github.com/SlavaUkraini2022/ddos_for_glory_of_ukraine	Досилка	SlavaUkraini2022
-https://github.com/ChngYrNick/actions-net	Досилка	ChngYrNick
 https://github.com/ChngYrNick/auto-reporting-fake-channels	Досилка	ChngYrNick
+https://github.com/ChngYrNick/actions-net	Досилка	ChngYrNick
 https://github.com/ChngYrNick/fuck-warship	Досилка	ChngYrNick
 https://github.com/AlexTrushkovsky/NoWarDDoS	Вообще на неё пожаловались много раз, и в итоге гитхаб выкосил репу, на что автор даже написал что гитхаб поддерживает Русских. Репа опять появилась.	AlexTrushkovsky
+https://github.com/opengs/uashieldtargets	Вообще на неё пожаловались много раз, и в итоге гитхаб выкосил репу, на что автор даже написал что гитхаб поддерживает Русских. Репа опять появилась.	AlexTrushkovsky
+https://github.com/alexmon1989/uma	Досилка	alexmon1989
+https://github.com/alexmon1989/russia_ddos	Досилка	alexmon1989
 https://github.com/jaamo/mrjaamo-blog	PHP_CodeSniffer rule adding non-collapsable comment calling out to Stop The War	jaamo
-https://github.com/medikoo/.npm-cross-link	Малварь	medikoo
-https://github.com/arendst/Tasmota	При обнаружении запуска в России или Беларуси, показывает политические лозунги и далее комментарии самого автора "Turn all power off - annoying", "Restart - more annoying", "Reset - disastrous".	arendst
+https://github.com/evermade/support-ukraine-banner-plugin	PHP_CodeSniffer rule adding non-collapsable comment calling out to Stop The War	jaamo
+https://github.com/evermade/support-ukraine-banner	PHP_CodeSniffer rule adding non-collapsable comment calling out to Stop The War	jaamo
+https://github.com/serverless/runtime	Малварь	medikoo
+https://github.com/Jason2866/Tasmota-build	При обнаружении запуска в России или Беларуси, показывает политические лозунги и далее комментарии самого автора "Turn all power off - annoying", "Restart - more annoying", "Reset - disastrous".	arendst
+https://github.com/tasmota/install	При обнаружении запуска в России или Беларуси, показывает политические лозунги и далее комментарии самого автора "Turn all power off - annoying", "Restart - more annoying", "Reset - disastrous".	arendst
 https://github.com/arendst/Tasmota-firmware	При обнаружении запуска в России или Беларуси, показывает политические лозунги и далее комментарии самого автора "Turn all power off - annoying", "Restart - more annoying", "Reset - disastrous".	arendst
-https://github.com/zkochan/bit	Заблокировал сайт pnpm.io для РФ и РБ	zkochan
-https://github.com/o2sh/miro	При установке программы подменяет библиотеку libgcc_s.so.1, система перестает отвечать и после перезагрузки система выдает ошибку kernel panic.	o2sh
+https://github.com/arendst/tmp_copy	При обнаружении запуска в России или Беларуси, показывает политические лозунги и далее комментарии самого автора "Turn all power off - annoying", "Restart - more annoying", "Reset - disastrous".	arendst
+https://github.com/Sateviss/sateviss.github.io	Гитхаб игнорит абузы с ру айпи	Sateviss
+https://github.com/pnpm/pnpm	Заблокировал сайт pnpm.io для РФ и РБ	zkochan
+https://github.com/teambit/bit	Заблокировал сайт pnpm.io для РФ и РБ	zkochan
+https://github.com/pnpm/pnpm.github.io	Заблокировал сайт pnpm.io для РФ и РБ	zkochan
 https://github.com/o2sh/onefetch	При установке программы подменяет библиотеку libgcc_s.so.1, система перестает отвечать и после перезагрузки система выдает ошибку kernel panic.	o2sh
+https://github.com/o2sh/homebrew-core	При установке программы подменяет библиотеку libgcc_s.so.1, система перестает отвечать и после перезагрузки система выдает ошибку kernel panic.	o2sh
+https://github.com/BHatGuy/onefetch	При установке программы подменяет библиотеку libgcc_s.so.1, система перестает отвечать и после перезагрузки система выдает ошибку kernel panic.	o2sh
 https://github.com/danieldanielecki/danieldanielecki	Подборка целей и инструментов для атак по инфраструктуре РФ	danieldanielecki
+https://github.com/tamotam-com/tamotam-app	Подборка целей и инструментов для атак по инфраструктуре РФ	danieldanielecki
 https://github.com/danieldanielecki/IT-ARMY-of-Ukraine-Resources-in-English	Подборка целей и инструментов для атак по инфраструктуре РФ	danieldanielecki
-https://github.com/terraform-aws-modules/.github	все модули AWS для Terraform поддерживаемые сообществом, также сдублировалось в официальный Registry (https://registry.terraform.io/modules/terraform-aws-modules/vpc/aws/latest), внимание на "дополнительные соглашения" внизу README каждого модуля.	terraform-aws-modules
-https://github.com/terraform-aws-modules/terraform-aws-acm	все модули AWS для Terraform поддерживаемые сообществом, также сдублировалось в официальный Registry (https://registry.terraform.io/modules/terraform-aws-modules/vpc/aws/latest), внимание на "дополнительные соглашения" внизу README каждого модуля.	terraform-aws-modules
-https://github.com/terraform-aws-modules/terraform-aws-alb	все модули AWS для Terraform поддерживаемые сообществом, также сдублировалось в официальный Registry (https://registry.terraform.io/modules/terraform-aws-modules/vpc/aws/latest), внимание на "дополнительные соглашения" внизу README каждого модуля.	terraform-aws-modules
-https://github.com/terraform-aws-modules/terraform-aws-apigateway-v2	все модули AWS для Terraform поддерживаемые сообществом, также сдублировалось в официальный Registry (https://registry.terraform.io/modules/terraform-aws-modules/vpc/aws/latest), внимание на "дополнительные соглашения" внизу README каждого модуля.	terraform-aws-modules
-https://github.com/terraform-aws-modules/terraform-aws-atlantis	все модули AWS для Terraform поддерживаемые сообществом, также сдублировалось в официальный Registry (https://registry.terraform.io/modules/terraform-aws-modules/vpc/aws/latest), внимание на "дополнительные соглашения" внизу README каждого модуля.	terraform-aws-modules
-https://github.com/terraform-aws-modules/terraform-aws-autoscaling	все модули AWS для Terraform поддерживаемые сообществом, также сдублировалось в официальный Registry (https://registry.terraform.io/modules/terraform-aws-modules/vpc/aws/latest), внимание на "дополнительные соглашения" внизу README каждого модуля.	terraform-aws-modules
-https://github.com/terraform-aws-modules/terraform-aws-cloudfront	все модули AWS для Terraform поддерживаемые сообществом, также сдублировалось в официальный Registry (https://registry.terraform.io/modules/terraform-aws-modules/vpc/aws/latest), внимание на "дополнительные соглашения" внизу README каждого модуля.	terraform-aws-modules
-https://github.com/terraform-aws-modules/terraform-aws-cloudwatch	все модули AWS для Terraform поддерживаемые сообществом, также сдублировалось в официальный Registry (https://registry.terraform.io/modules/terraform-aws-modules/vpc/aws/latest), внимание на "дополнительные соглашения" внизу README каждого модуля.	terraform-aws-modules
-https://github.com/terraform-aws-modules/terraform-aws-ec2-instance	все модули AWS для Terraform поддерживаемые сообществом, также сдублировалось в официальный Registry (https://registry.terraform.io/modules/terraform-aws-modules/vpc/aws/latest), внимание на "дополнительные соглашения" внизу README каждого модуля.	terraform-aws-modules
-https://github.com/terraform-aws-modules/terraform-aws-ecs	все модули AWS для Terraform поддерживаемые сообществом, также сдублировалось в официальный Registry (https://registry.terraform.io/modules/terraform-aws-modules/vpc/aws/latest), внимание на "дополнительные соглашения" внизу README каждого модуля.	terraform-aws-modules
-https://github.com/terraform-aws-modules/terraform-aws-eks	все модули AWS для Terraform поддерживаемые сообществом, также сдублировалось в официальный Registry (https://registry.terraform.io/modules/terraform-aws-modules/vpc/aws/latest), внимание на "дополнительные соглашения" внизу README каждого модуля.	terraform-aws-modules
-https://github.com/terraform-aws-modules/terraform-aws-iam	все модули AWS для Terraform поддерживаемые сообществом, также сдублировалось в официальный Registry (https://registry.terraform.io/modules/terraform-aws-modules/vpc/aws/latest), внимание на "дополнительные соглашения" внизу README каждого модуля.	terraform-aws-modules
-https://github.com/terraform-aws-modules/terraform-aws-lambda	все модули AWS для Terraform поддерживаемые сообществом, также сдублировалось в официальный Registry (https://registry.terraform.io/modules/terraform-aws-modules/vpc/aws/latest), внимание на "дополнительные соглашения" внизу README каждого модуля.	terraform-aws-modules
-https://github.com/terraform-aws-modules/terraform-aws-rds	все модули AWS для Terraform поддерживаемые сообществом, также сдублировалось в официальный Registry (https://registry.terraform.io/modules/terraform-aws-modules/vpc/aws/latest), внимание на "дополнительные соглашения" внизу README каждого модуля.	terraform-aws-modules
-https://github.com/terraform-aws-modules/terraform-aws-rds-aurora	все модули AWS для Terraform поддерживаемые сообществом, также сдублировалось в официальный Registry (https://registry.terraform.io/modules/terraform-aws-modules/vpc/aws/latest), внимание на "дополнительные соглашения" внизу README каждого модуля.	terraform-aws-modules
-https://github.com/terraform-aws-modules/terraform-aws-route53	все модули AWS для Terraform поддерживаемые сообществом, также сдублировалось в официальный Registry (https://registry.terraform.io/modules/terraform-aws-modules/vpc/aws/latest), внимание на "дополнительные соглашения" внизу README каждого модуля.	terraform-aws-modules
-https://github.com/terraform-aws-modules/terraform-aws-s3-bucket	все модули AWS для Terraform поддерживаемые сообществом, также сдублировалось в официальный Registry (https://registry.terraform.io/modules/terraform-aws-modules/vpc/aws/latest), внимание на "дополнительные соглашения" внизу README каждого модуля.	terraform-aws-modules
-https://github.com/Mister-Hope/docker_practice	ссылка на isue	Mister-Hope
-https://github.com/Mister-Hope/docs	ссылка на isue	Mister-Hope
-https://github.com/Mister-Hope/gulp-sass	ссылка на isue	Mister-Hope
-https://github.com/Mister-Hope/Mister-Hope	ссылка на isue	Mister-Hope
+https://github.com/vuepress-theme-hope/vuepress-theme-hope	ссылка на isue	Mister-Hope
+https://github.com/vuepress-theme-hope/v2	ссылка на isue	Mister-Hope
+https://github.com/vuepress-theme-hope/v1	ссылка на isue	Mister-Hope
+https://github.com/vuepress-theme-hope/v2-demo	ссылка на isue	Mister-Hope
+https://github.com/vuepress-theme-hope/v1-demo	ссылка на isue	Mister-Hope
+https://github.com/vuepress-theme-hope/vuepress-theme-hope.github.io	ссылка на isue	Mister-Hope
 https://github.com/Mister-Hope/Mister-Hope.github.io	ссылка на isue	Mister-Hope
-https://github.com/RIAEvangelist/awesome-actions	Сама библиотека удаляющая файловую систему по IP из России и Белоруссии	RIAEvangelist
-https://github.com/MidSpike/discord-speech-recognition	Может удалить все файлы на PC. В библиотеку node-ipc добавили шифровальщик для ip России и Белоруссии. Оно реально всю фс закидывает сердечками, если ты из России и Беларуси. Причем вручную поставили 25% вероятности в начале таймаута, чтобы эта штука была больше похоже на плавающий баг, чем на что-то намеренное. Появились сообщения о том, что уязвимость откатили ( https://github.com/arendst/Tasmota/commit/ba32044bb25b820a104428585bf4c91c4e927f88 , https://github.com/arendst/Tasmota/commit/b4f99bb74704e4a5f85b7ba9e03b126bf1c43320 )	MidSpike
+https://github.com/RIAEvangelist/RIAEvangelist	Сама библиотека удаляющая файловую систему по IP из России и Белоруссии	RIAEvangelist
+https://github.com/Inertia-Lighting/go-mongo-db	Может удалить все файлы на PC. В библиотеку node-ipc добавили шифровальщик для ip России и Белоруссии. Оно реально всю фс закидывает сердечками, если ты из России и Беларуси. Причем вручную поставили 25% вероятности в начале таймаута, чтобы эта штука была больше похоже на плавающий баг, чем на что-то намеренное. Появились сообщения о том, что уязвимость откатили ( https://github.com/arendst/Tasmota/commit/ba32044bb25b820a104428585bf4c91c4e927f88 , https://github.com/arendst/Tasmota/commit/b4f99bb74704e4a5f85b7ba9e03b126bf1c43320 )	MidSpike
 https://github.com/MidSpike/iris-utilities	Может удалить все файлы на PC. В библиотеку node-ipc добавили шифровальщик для ip России и Белоруссии. Оно реально всю фс закидывает сердечками, если ты из России и Беларуси. Причем вручную поставили 25% вероятности в начале таймаута, чтобы эта штука была больше похоже на плавающий баг, чем на что-то намеренное. Появились сообщения о том, что уязвимость откатили ( https://github.com/arendst/Tasmota/commit/ba32044bb25b820a104428585bf4c91c4e927f88 , https://github.com/arendst/Tasmota/commit/b4f99bb74704e4a5f85b7ba9e03b126bf1c43320 )	MidSpike
-https://github.com/MidSpike/node-ipc	Может удалить все файлы на PC. В библиотеку node-ipc добавили шифровальщик для ip России и Белоруссии. Оно реально всю фс закидывает сердечками, если ты из России и Беларуси. Причем вручную поставили 25% вероятности в начале таймаута, чтобы эта штука была больше похоже на плавающий баг, чем на что-то намеренное. Появились сообщения о том, что уязвимость откатили ( https://github.com/arendst/Tasmota/commit/ba32044bb25b820a104428585bf4c91c4e927f88 , https://github.com/arendst/Tasmota/commit/b4f99bb74704e4a5f85b7ba9e03b126bf1c43320 )	MidSpike
-https://github.com/MidSpike/translate-google	Может удалить все файлы на PC. В библиотеку node-ipc добавили шифровальщик для ip России и Белоруссии. Оно реально всю фс закидывает сердечками, если ты из России и Беларуси. Причем вручную поставили 25% вероятности в начале таймаута, чтобы эта штука была больше похоже на плавающий баг, чем на что-то намеренное. Появились сообщения о том, что уязвимость откатили ( https://github.com/arendst/Tasmota/commit/ba32044bb25b820a104428585bf4c91c4e927f88 , https://github.com/arendst/Tasmota/commit/b4f99bb74704e4a5f85b7ba9e03b126bf1c43320 )	MidSpike
+https://github.com/Inertia-Lighting/discord-bot-api-server	Может удалить все файлы на PC. В библиотеку node-ipc добавили шифровальщик для ip России и Белоруссии. Оно реально всю фс закидывает сердечками, если ты из России и Беларуси. Причем вручную поставили 25% вероятности в начале таймаута, чтобы эта штука была больше похоже на плавающий баг, чем на что-то намеренное. Появились сообщения о том, что уязвимость откатили ( https://github.com/arendst/Tasmota/commit/ba32044bb25b820a104428585bf4c91c4e927f88 , https://github.com/arendst/Tasmota/commit/b4f99bb74704e4a5f85b7ba9e03b126bf1c43320 )	MidSpike
 https://github.com/fomvasss/laravel-variables	Удален с github	fomvasss
+https://github.com/fomvasss/php-storm-settings	Удален с github	fomvasss
+https://github.com/uglide/RedisDesktopManager	как бы чего еще туда не заложили вредного	uglide
 https://github.com/uglide/drf-tus	как бы чего еще туда не заложили вредного	uglide
-https://github.com/Tyrrrz/.github	Дал ссылку на репо, там везде призывы к поддержке х-слов, ну и в самой программе при запуске всплывает плашка о поддержке т.н. "украины"	Tyrrrz
-https://github.com/Tyrrrz/CliFx	Дал ссылку на репо, там везде призывы к поддержке х-слов, ну и в самой программе при запуске всплывает плашка о поддержке т.н. "украины"	Tyrrrz
-https://github.com/Tyrrrz/CliWrap	Дал ссылку на репо, там везде призывы к поддержке х-слов, ну и в самой программе при запуске всплывает плашка о поддержке т.н. "украины"	Tyrrrz
-https://github.com/Tyrrrz/Contextual	Дал ссылку на репо, там везде призывы к поддержке х-слов, ну и в самой программе при запуске всплывает плашка о поддержке т.н. "украины"	Tyrrrz
-https://github.com/Tyrrrz/DiscordChatExporter	Дал ссылку на репо, там везде призывы к поддержке х-слов, ну и в самой программе при запуске всплывает плашка о поддержке т.н. "украины"	Tyrrrz
-https://github.com/Tyrrrz/DotnetRuntimeBootstrapper	Дал ссылку на репо, там везде призывы к поддержке х-слов, ну и в самой программе при запуске всплывает плашка о поддержке т.н. "украины"	Tyrrrz
-https://github.com/Tyrrrz/GitHubActionsTestLogger	Дал ссылку на репо, там везде призывы к поддержке х-слов, ну и в самой программе при запуске всплывает плашка о поддержке т.н. "украины"	Tyrrrz
-https://github.com/Tyrrrz/Gress	Дал ссылку на репо, там везде призывы к поддержке х-слов, ну и в самой программе при запуске всплывает плашка о поддержке т.н. "украины"	Tyrrrz
-https://github.com/Tyrrrz/JsonExtensions	Дал ссылку на репо, там везде призывы к поддержке х-слов, ну и в самой программе при запуске всплывает плашка о поддержке т.н. "украины"	Tyrrrz
-https://github.com/Tyrrrz/LightBulb	Дал ссылку на репо, там везде призывы к поддержке х-слов, ну и в самой программе при запуске всплывает плашка о поддержке т.н. "украины"	Tyrrrz
-https://github.com/Tyrrrz/MiniRazor	Дал ссылку на репо, там везде призывы к поддержке х-слов, ну и в самой программе при запуске всплывает плашка о поддержке т.н. "украины"	Tyrrrz
-https://github.com/dmitryvinn-fb/buck	Баннер в поддержку украины	dmitryvinn-fb
-https://github.com/dmitryvinn-fb/reactjs.org	Баннер в поддержку украины	dmitryvinn-fb
+https://github.com/a2435191/ukraine-war-map-twitter-bot	Бот для ведения пропаганды в твиттере	a2435191
+https://github.com/Tyrrrz/Tyrrrzme	Дал ссылку на репо, там везде призывы к поддержке х-слов, ну и в самой программе при запуске всплывает плашка о поддержке т.н. "украины"	Tyrrrz
+https://github.com/Tyrrrz/SpellingUkraine	Дал ссылку на репо, там везде призывы к поддержке х-слов, ну и в самой программе при запуске всплывает плашка о поддержке т.н. "украины"	Tyrrrz
+https://github.com/Tyrrrz/YoutubeDownloader	Дал ссылку на репо, там везде призывы к поддержке х-слов, ну и в самой программе при запуске всплывает плашка о поддержке т.н. "украины"	Tyrrrz
+https://github.com/Tyrrrz/made-in-ukraine	Дал ссылку на репо, там везде призывы к поддержке х-слов, ну и в самой программе при запуске всплывает плашка о поддержке т.н. "украины"	Tyrrrz
+https://github.com/facebook/hermes	Баннер в поддержку украины	dmitryvinn-fb
+https://github.com/facebook/fresco	Баннер в поддержку украины	dmitryvinn-fb
+https://github.com/facebook/buck	Баннер в поддержку украины	dmitryvinn-fb
+https://github.com/facebookresearch/pyrobot	Баннер в поддержку украины	dmitryvinn-fb
+https://github.com/facebookincubator/spectrum	Баннер в поддержку украины	dmitryvinn-fb
 https://github.com/dmitryvinn-fb/spectrum	Баннер в поддержку украины	dmitryvinn-fb
-https://github.com/vshymanskyy/awesome-wasm-tools	В репозитории есть список проектов, которые его используют. Возможно в них есть ещё "закладки", кроме лозунгов из этого репозитория.	vshymanskyy
+https://github.com/facebook/CacheLib	Баннер в поддержку украины	dmitryvinn-fb
+https://github.com/facebookresearch/vissl	Баннер в поддержку украины	dmitryvinn-fb
+https://github.com/facebookincubator/Glean	Баннер в поддержку украины	dmitryvinn-fb
+https://github.com/ukrainian-github/.github	В репозитории есть список проектов, которые его используют. Возможно в них есть ещё "закладки", кроме лозунгов из этого репозитория.	vshymanskyy
+https://github.com/wasm3/.github	В репозитории есть список проектов, которые его используют. Возможно в них есть ещё "закладки", кроме лозунгов из этого репозитория.	vshymanskyy
+https://github.com/vshymanskyy/StandWithUkraine	В репозитории есть список проектов, которые его используют. Возможно в них есть ещё "закладки", кроме лозунгов из этого репозитория.	vshymanskyy
 https://github.com/Russia-Sanctions/.github	Просто пакет, который предлагается включать, чтобы выводить политические лозунги	Russia-Sanctions
-https://github.com/Russia-Sanctions/Base	Просто пакет, который предлагается включать, чтобы выводить политические лозунги	Russia-Sanctions
-https://github.com/Russia-Sanctions/CloudFront	Просто пакет, который предлагается включать, чтобы выводить политические лозунги	Russia-Sanctions
 https://github.com/Russia-Sanctions/Connect-Express	Просто пакет, который предлагается включать, чтобы выводить политические лозунги	Russia-Sanctions
-https://github.com/Russia-Sanctions/help-ukraine-open-source	Просто пакет, который предлагается включать, чтобы выводить политические лозунги	Russia-Sanctions
-https://github.com/Russia-Sanctions/Laravel	Просто пакет, который предлагается включать, чтобы выводить политические лозунги	Russia-Sanctions
-https://github.com/dmitryvinn/Ax-1	Баннер в поддержку украины. Автор: https://github.com/dmitryvinn	dmitryvinn
-https://github.com/dmitryvinn/beanmachine	Баннер в поддержку украины. Автор: https://github.com/dmitryvinn	dmitryvinn
-https://github.com/dmitryvinn/bistro	Баннер в поддержку украины. Автор: https://github.com/dmitryvinn	dmitryvinn
-https://github.com/dmitryvinn/BOLT	Баннер в поддержку украины. Автор: https://github.com/dmitryvinn	dmitryvinn
-https://github.com/dmitryvinn/botorch-1	Баннер в поддержку украины. Автор: https://github.com/dmitryvinn	dmitryvinn
-https://github.com/dmitryvinn/buck	Баннер в поддержку украины. Автор: https://github.com/dmitryvinn	dmitryvinn
+https://github.com/Russia-Sanctions/Base	Просто пакет, который предлагается включать, чтобы выводить политические лозунги	Russia-Sanctions
+https://github.com/Russia-Sanctions/CloudFormation	Просто пакет, который предлагается включать, чтобы выводить политические лозунги	Russia-Sanctions
+https://github.com/dmitryvinn/remix-demo-app-applitools	Баннер в поддержку украины. Автор: https://github.com/dmitryvinn	dmitryvinn
+https://github.com/dmitryvinn/dmitryvinn-remix-demo-app-applitools	Баннер в поддержку украины. Автор: https://github.com/dmitryvinn	dmitryvinn
+https://github.com/dmitryvinn/pyrobot	Баннер в поддержку украины. Автор: https://github.com/dmitryvinn	dmitryvinn
 https://github.com/dmitryvinn/CacheLib	Баннер в поддержку украины. Автор: https://github.com/dmitryvinn	dmitryvinn
-https://github.com/dmitryvinn/captum	Баннер в поддержку украины. Автор: https://github.com/dmitryvinn	dmitryvinn
-https://github.com/dmitryvinn/chisel	Баннер в поддержку украины. Автор: https://github.com/dmitryvinn	dmitryvinn
-https://github.com/dmitryvinn/cinder	Баннер в поддержку украины. Автор: https://github.com/dmitryvinn	dmitryvinn
-https://github.com/dmitryvinn/ClassyVision	Баннер в поддержку украины. Автор: https://github.com/dmitryvinn	dmitryvinn
-https://github.com/dmitryvinn/componentkit	Баннер в поддержку украины. Автор: https://github.com/dmitryvinn	dmitryvinn
-https://github.com/dmitryvinn/CrypTen	Баннер в поддержку украины. Автор: https://github.com/dmitryvinn	dmitryvinn
-https://github.com/sebastianbergmann/cli-parser	политика	sebastianbergmann
-https://github.com/sebastianbergmann/code-unit	политика	sebastianbergmann
-https://github.com/sebastianbergmann/code-unit-reverse-lookup	политика	sebastianbergmann
-https://github.com/sebastianbergmann/comparator	политика	sebastianbergmann
-https://github.com/sebastianbergmann/complexity	политика	sebastianbergmann
-https://github.com/sebastianbergmann/container-amiga-gcc	политика	sebastianbergmann
-https://github.com/sebastianbergmann/container-amitools	политика	sebastianbergmann
-https://github.com/sebastianbergmann/diff	политика	sebastianbergmann
-https://github.com/sebastianbergmann/engine	политика	sebastianbergmann
-https://github.com/sebastianbergmann/environment	политика	sebastianbergmann
-https://github.com/sebastianbergmann/exporter	политика	sebastianbergmann
-https://github.com/sebastianbergmann/global-state	политика	sebastianbergmann
-https://github.com/sebastianbergmann/lines-of-code	политика	sebastianbergmann
-https://github.com/sebastianbergmann/object-enumerator	политика	sebastianbergmann
+https://github.com/dmitryvinn/vissl-1	Баннер в поддержку украины. Автор: https://github.com/dmitryvinn	dmitryvinn
+https://github.com/dmitryvinn/Glean	Баннер в поддержку украины. Автор: https://github.com/dmitryvinn	dmitryvinn
+https://github.com/dmitryvinn/python-nubia	Баннер в поддержку украины. Автор: https://github.com/dmitryvinn	dmitryvinn
+https://github.com/dmitryvinn/hermes	Баннер в поддержку украины. Автор: https://github.com/dmitryvinn	dmitryvinn
+https://github.com/sebastianbergmann/phpunit	политика	sebastianbergmann
+https://github.com/sebastianbergmann/phpunit-website	политика	sebastianbergmann
+https://github.com/sebastianbergmann/type	политика	sebastianbergmann
+https://github.com/sebastianbergmann/recursion-context	политика	sebastianbergmann
+https://github.com/sebastianbergmann/php-timer	политика	sebastianbergmann
+https://github.com/sebastianbergmann/php-text-template	политика	sebastianbergmann
+https://github.com/sebastianbergmann/php-invoker	политика	sebastianbergmann
+https://github.com/sebastianbergmann/php-file-iterator	политика	sebastianbergmann
 https://github.com/sebastianbergmann/object-reflector	политика	sebastianbergmann
-https://github.com/denysdovhan/bash-handbook	Баннер #StandWithUkraine	denysdovhan
-https://github.com/denysdovhan/denysdovhan	Баннер #StandWithUkraine	denysdovhan
-https://github.com/fzn0x/awesome-fp	composer update - выдает в консоли #StandWithUkraine	fzn0x
+https://github.com/sebastianbergmann/object-enumerator	политика	sebastianbergmann
+https://github.com/sebastianbergmann/lines-of-code	политика	sebastianbergmann
+https://github.com/sebastianbergmann/global-state	политика	sebastianbergmann
+https://github.com/sebastianbergmann/environment	политика	sebastianbergmann
+https://github.com/sebastianbergmann/diff	политика	sebastianbergmann
+https://github.com/sebastianbergmann/complexity	политика	sebastianbergmann
+https://github.com/sebastianbergmann/comparator	политика	sebastianbergmann
+https://github.com/sebastianbergmann/code-unit-reverse-lookup	политика	sebastianbergmann
+https://github.com/sebastianbergmann/code-unit	политика	sebastianbergmann
+https://github.com/sebastianbergmann/cli-parser	политика	sebastianbergmann
+https://github.com/sebastianbergmann/exporter	политика	sebastianbergmann
+https://github.com/Codeception/module-rest	Выводит в консоли ссылку на https://helpukrainewin.org	Naktibalda
+https://github.com/Codeception/Codeception	Выводит в консоли ссылку на https://helpukrainewin.org	Naktibalda
+https://github.com/Codeception/module-lumen	Выводит в консоли ссылку на https://helpukrainewin.org	Naktibalda
+https://github.com/evolution-cms/installer	Полит лозунг в cms	Dmi3yy
+https://github.com/evolution-cms/evolution	Полит лозунг в cms	Dmi3yy
+https://github.com/ukraine-not-war/stop-war	Полит лозунг в cms	Dmi3yy
+https://github.com/Codeception/Codeception	при запуске в консоли выводится "Codeception PHP Testing Framework v4.1.31 https://helpukrainewin.org"	DavertMik
+https://github.com/denysdovhan/homebrew-core	Баннер #StandWithUkraine	denysdovhan
+https://github.com/wix-incubator/autoviews	Баннер #StandWithUkraine	denysdovhan
+https://github.com/fzn0x/web3.js	composer update - выдает в консоли #StandWithUkraine	fzn0x
+https://github.com/sequelize/website	composer update - выдает в консоли #StandWithUkraine	fzn0x
+https://github.com/fzn0x/nuxt-web3	composer update - выдает в консоли #StandWithUkraine	fzn0x
+https://github.com/11ty/eleventy	До этого была ссылка на донаты для украины	zachleat
+https://github.com/11ty/eleventy-utils	До этого была ссылка на донаты для украины	zachleat
+https://github.com/11ty/11ty-website	До этого была ссылка на донаты для украины	zachleat
+https://github.com/11ty/11ty-community	До этого была ссылка на донаты для украины	zachleat
+https://github.com/11ty/eleventy-community	До этого была ссылка на донаты для украины	zachleat
+https://github.com/deschler/django-modeltranslation	Политические лозунги в документации	last-partizan
+https://github.com/dantleech/dotfiles	standwithukraine	dantleech
 https://github.com/dantleech/blog	standwithukraine	dantleech
+https://github.com/my127/workspace	standwithukraine	dantleech
+https://github.com/phpactor/phpactor	standwithukraine	dantleech
 https://github.com/spider-mane/leonidas	#StandWithUkraine	spider-mane
 https://github.com/spider-mane/panamax	#StandWithUkraine	spider-mane
-https://github.com/spider-mane/php-project	#StandWithUkraine	spider-mane
+https://github.com/ypylypenko/ypylypenko	Политические лозунги.	ypylypenko
 https://github.com/ypylypenko/activeadmin_simplemde	Политические лозунги.	ypylypenko
 https://github.com/ypylypenko/FontKit	Политические лозунги.	ypylypenko
-https://github.com/pnpm/.github	Вредительства не замечено, но сайт с доками блочит ру айпи	pnpm
-https://github.com/pnpm/action-setup	Вредительства не замечено, но сайт с доками блочит ру айпи	pnpm
-https://github.com/pnpm/get.pnpm.io	Вредительства не замечено, но сайт с доками блочит ру айпи	pnpm
-https://github.com/pnpm/graph-sequencer	Вредительства не замечено, но сайт с доками блочит ру айпи	pnpm
+https://github.com/sciactive/nymphjs	на их официальрном сайте https://sveltematerialui.com/ висит плашка с лозунгом	hperrin
+https://github.com/hperrin/svelte-material-ui	на их официальрном сайте https://sveltematerialui.com/ висит плашка с лозунгом	hperrin
+https://github.com/pnpm/pnpm	Вредительства не замечено, но сайт с доками блочит ру айпи	pnpm
+https://github.com/panaceya/winbox	Мейнтейнер snap-пакета приложил поп-ап, который открывается при использовании русской локали	panaceya
+https://github.com/shalb/.github	см. условия использования в конце readme	MaxymVlasov
+https://github.com/msproadshow/.github	см. условия использования в конце readme	MaxymVlasov
+https://github.com/itkpi/.github	см. условия использования в конце readme	MaxymVlasov
 https://github.com/MaxymVlasov/eco-data-visualizer	см. условия использования в конце readme	MaxymVlasov
-https://github.com/MaxymVlasov/maxymvlasov	см. условия использования в конце readme	MaxymVlasov
+https://github.com/antonbabenko/pre-commit-terraform	см. условия использования в конце readme	MaxymVlasov
 https://github.com/Anarios/return-youtube-dislike	;Добавление на главную страницу украинского флага и ссылки на сайт для поддержки украинской армии;; + интересная строка в комментарии одного из разработчиков (https://github.com/Anarios/return-youtube-dislike/graphs/contributors): https://github.com/Anarios/return-youtube-dislike/issues/497 "https://returnyoutubedislikeapi.com/ is blocked in Russia. If you are there, you won't be able to view or submit dislike votes unless you use a proxy or a VPN.", хотя сервис и работает (https://returnyoutubedislikeapi.com/votes?videoId=kxOuG8jMIgI);; Ничего серьёзного про политическую позицию нету;	Anarios
+https://github.com/cyrildtm/return-youtube-dislike	;Добавление на главную страницу украинского флага и ссылки на сайт для поддержки украинской армии;; + интересная строка в комментарии одного из разработчиков (https://github.com/Anarios/return-youtube-dislike/graphs/contributors): https://github.com/Anarios/return-youtube-dislike/issues/497 "https://returnyoutubedislikeapi.com/ is blocked in Russia. If you are there, you won't be able to view or submit dislike votes unless you use a proxy or a VPN.", хотя сервис и работает (https://returnyoutubedislikeapi.com/votes?videoId=kxOuG8jMIgI);; Ничего серьёзного про политическую позицию нету;	Anarios
 https://github.com/CoreELEC/CoreELEC	Замена логотипа в цвета флага Украины	CoreELEC
-https://github.com/CoreELEC/linux-amlogic	Замена логотипа в цвета флага Украины	CoreELEC
-https://github.com/CoreELEC/media_modules-aml	Замена логотипа в цвета флага Украины	CoreELEC
-https://github.com/CoreELEC/remotes	Замена логотипа в цвета флага Украины	CoreELEC
-https://github.com/CoreELEC/service.coreelec.settings	Замена логотипа в цвета флага Украины	CoreELEC
-https://github.com/CoreELEC/smartchip	Замена логотипа в цвета флага Украины	CoreELEC
-https://github.com/danilo-leal/daniloleal.co	В документации полит. лозунг "STOP RUSSIA'S INVASION OF UKRAINE". https://mui.com/getting-started/installation/	danilo-leal
+https://github.com/CoreELEC/xbmc	Замена логотипа в цвета флага Украины	CoreELEC
+https://github.com/danilo-leal/material-ui	В документации полит. лозунг "STOP RUSSIA'S INVASION OF UKRAINE". https://mui.com/getting-started/installation/	danilo-leal
+https://github.com/ducin-public/exercises-jasmine	В документации полит. лозунг "STOP RUSSIA'S INVASION OF UKRAINE". https://emotion.sh/docs/introduction	ducin
 https://github.com/vasylnahuliak/DefinitelyTyped	В документации полит. лозунг "STOP RUSSIA'S INVASION OF UKRAINE". https://ru.reactjs.org	vasylnahuliak
+https://github.com/vasylnahuliak/free-programming-books	В документации полит. лозунг "STOP RUSSIA'S INVASION OF UKRAINE". https://ru.reactjs.org	vasylnahuliak
 https://github.com/vasylnahuliak/keep-alive	В документации полит. лозунг "STOP RUSSIA'S INVASION OF UKRAINE". https://ru.reactjs.org	vasylnahuliak
-https://github.com/spaceship-prompt/.github	Поддержка полит лозунгами и удаление всех русских issues	spaceship-prompt
-https://github.com/spaceship-prompt/spaceship-prompt	Поддержка полит лозунгами и удаление всех русских issues	spaceship-prompt
+https://github.com/vasylnahuliak/free-programming-books-1	В документации полит. лозунг "STOP RUSSIA'S INVASION OF UKRAINE". https://ru.reactjs.org	vasylnahuliak
+https://github.com/vasylnahuliak/996.ICU	В документации полит. лозунг "STOP RUSSIA'S INVASION OF UKRAINE". https://ru.reactjs.org	vasylnahuliak
+https://github.com/Qalculate/qalculate-gtk	Remove flags for RUB and BYR/BYN, and show UAH flag when first using the new version. Ничего серьезного, но раздражает. Версия с этим коммитом уже в репозиториях arch. Работает не только в РФ/БР, а вообще у всех.	hanna-kn
+https://github.com/Qalculate/libqalculate	Remove flags for RUB and BYR/BYN, and show UAH flag when first using the new version. Ничего серьезного, но раздражает. Версия с этим коммитом уже в репозиториях arch. Работает не только в РФ/БР, а вообще у всех.	hanna-kn
+https://github.com/Qalculate/qalculate-qt	Remove flags for RUB and BYR/BYN, and show UAH flag when first using the new version. Ничего серьезного, но раздражает. Версия с этим коммитом уже в репозиториях arch. Работает не только в РФ/БР, а вообще у всех.	hanna-kn
+https://github.com/vadimdemedes/ava	Issue с призывом платной поддержки украинской армии	vadimdemedes
 https://github.com/vadimdemedes/.github	Issue с призывом платной поддержки украинской армии	vadimdemedes
+https://github.com/vadimdemedes/StandWithUkraine	Issue с призывом платной поддержки украинской армии	vadimdemedes
+https://github.com/vadimdemedes/tailwind-rn	Issue с призывом платной поддержки украинской армии	vadimdemedes
+https://github.com/vadimdemedes/ink	Issue с призывом платной поддержки украинской армии	vadimdemedes
 https://github.com/pabio/redirect-russia	Установленный скрипт на сайте редиректит на страницу с агиткой. Проверяет по ip пользователя и таймзоне.	pabio
-https://github.com/KickflipCli/kickflip	Генератор фейковых сайтов по шаблону с ключевыми словами и призывами (одного мейнтейнера уже забанили за национальную рознь, другой продолжает работу)	KickflipCli
-https://github.com/KickflipCli/kickflip-cli	Генератор фейковых сайтов по шаблону с ключевыми словами и призывами (одного мейнтейнера уже забанили за национальную рознь, другой продолжает работу)	KickflipCli
-https://github.com/KickflipCli/kickflip-docs	Генератор фейковых сайтов по шаблону с ключевыми словами и призывами (одного мейнтейнера уже забанили за национальную рознь, другой продолжает работу)	KickflipCli
-https://github.com/KickflipCli/kickflip-router-nav-plugin	Генератор фейковых сайтов по шаблону с ключевыми словами и призывами (одного мейнтейнера уже забанили за национальную рознь, другой продолжает работу)	KickflipCli
+https://github.com/GM-DONATE/IGS	Скрытно заменена текстура модели автомата с содовой на текстуру господина П. с фекалиями с расчетом на проблемы с законом. Возможно дальнейшее внедрение вредоносов, функционал позволяет.	AMD-NICK
 https://github.com/KickflipCli/kickflip-src	Генератор фейковых сайтов по шаблону с ключевыми словами и призывами (одного мейнтейнера уже забанили за национальную рознь, другой продолжает работу)	KickflipCli
+https://github.com/KickflipCli/kickflip-docs	Генератор фейковых сайтов по шаблону с ключевыми словами и призывами (одного мейнтейнера уже забанили за национальную рознь, другой продолжает работу)	KickflipCli
+https://github.com/KickflipCli/kickflip-cli	Генератор фейковых сайтов по шаблону с ключевыми словами и призывами (одного мейнтейнера уже забанили за национальную рознь, другой продолжает работу)	KickflipCli
 https://github.com/k01ek/netbox-devicetype-importer	Примеры программ на разных языках программированиях выводящие текст "No to war"	k01ek
 https://github.com/stop-war-in-ukraine/stop-russia-it	Массовый спам issues в репозиториях	stop-war-in-ukraine
-https://github.com/NewEXE/ban-dera-1	Куча говна	NewEXE
-https://github.com/NewEXE/belsk-schedule	Куча говна	NewEXE
-https://github.com/Danon/4playeditor.net	StandWithUkraine banner	Danon
-https://github.com/Danon/pygame	StandWithUkraine banner	Danon
-https://github.com/Danon/StandWithUkraine	StandWithUkraine banner	Danon
+https://github.com/NewEXE/ua-help	Куча говна	NewEXE
+https://github.com/webimpress/coding-standard	Данный политический лозунг есть во всех пакетах laminas/ и mezzio/.	michalbundyra
+https://github.com/laminas/workflow-continuous-integration	Данный политический лозунг есть во всех пакетах laminas/ и mezzio/.	michalbundyra
+https://github.com/laminas/workflow-automatic-releases	Данный политический лозунг есть во всех пакетах laminas/ и mezzio/.	michalbundyra
+https://github.com/laminas/tutorials	Данный политический лозунг есть во всех пакетах laminas/ и mezzio/.	michalbundyra
+https://github.com/laminas/twitter-automation	Данный политический лозунг есть во всех пакетах laminas/ и mezzio/.	michalbundyra
+https://github.com/laminas/technical-steering-committee	Данный политический лозунг есть во всех пакетах laminas/ и mezzio/.	michalbundyra
+https://github.com/laminas/repo-template	Данный политический лозунг есть во всех пакетах laminas/ и mezzio/.	michalbundyra
+https://github.com/laminas/laminas.github.io	Данный политический лозунг есть во всех пакетах laminas/ и mezzio/.	michalbundyra
+https://github.com/laminas/laminas.dev	Данный политический лозунг есть во всех пакетах laminas/ и mezzio/.	michalbundyra
+https://github.com/laminas/laminas-zendframework-bridge	Данный политический лозунг есть во всех пакетах laminas/ и mezzio/.	michalbundyra
+https://github.com/laminas/laminas-xml2json	Данный политический лозунг есть во всех пакетах laminas/ и mezzio/.	michalbundyra
+https://github.com/laminas/laminas-xmlrpc	Данный политический лозунг есть во всех пакетах laminas/ и mezzio/.	michalbundyra
+https://github.com/laminas/laminas-xml	Данный политический лозунг есть во всех пакетах laminas/ и mezzio/.	michalbundyra
+https://github.com/laminas/laminas-view	Данный политический лозунг есть во всех пакетах laminas/ и mezzio/.	michalbundyra
+https://github.com/laminas/laminas-validator	Данный политический лозунг есть во всех пакетах laminas/ и mezzio/.	michalbundyra
+https://github.com/laminas/laminas-uri	Данный политический лозунг есть во всех пакетах laminas/ и mezzio/.	michalbundyra
+https://github.com/laminas/laminas-twitter	Данный политический лозунг есть во всех пакетах laminas/ и mezzio/.	michalbundyra
+https://github.com/laminas/laminas-text	Данный политический лозунг есть во всех пакетах laminas/ и mezzio/.	michalbundyra
+https://github.com/laminas/laminas-test	Данный политический лозунг есть во всех пакетах laminas/ и mezzio/.	michalbundyra
+https://github.com/laminas/laminas-tag	Данный политический лозунг есть во всех пакетах laminas/ и mezzio/.	michalbundyra
+https://github.com/laminas/laminas-stratigility	Данный политический лозунг есть во всех пакетах laminas/ и mezzio/.	michalbundyra
+https://github.com/laminas/laminas-stdlib	Данный политический лозунг есть во всех пакетах laminas/ и mezzio/.	michalbundyra
+https://github.com/laminas/laminas-soap	Данный политический лозунг есть во всех пакетах laminas/ и mezzio/.	michalbundyra
+https://github.com/laminas/laminas-skeleton-installer	Данный политический лозунг есть во всех пакетах laminas/ и mezzio/.	michalbundyra
+https://github.com/laminas/laminas-session	Данный политический лозунг есть во всех пакетах laminas/ и mezzio/.	michalbundyra
+https://github.com/laminas/laminas-servicemanager-migration	Данный политический лозунг есть во всех пакетах laminas/ и mezzio/.	michalbundyra
+https://github.com/voku/dotfiles	used e.g. in Laravel Core	voku
+https://github.com/voku/Stringy	used e.g. in Laravel Core	voku
+https://github.com/voku/HtmlMin	used e.g. in Laravel Core	voku
+https://github.com/voku/simple_html_dom	used e.g. in Laravel Core	voku
+https://github.com/voku/Arrayy	used e.g. in Laravel Core	voku
+https://github.com/T-Regx/T-Regx	StandWithUkraine banner	Danon
 https://github.com/Yaffle/EventSource	Полифилы js используются в множестве сторонних сервисов, пол миллиона загрузок в неделю.	Yaffle
-https://github.com/samber/awesome-go	Определяет активный у пользователя язык и редиректит на страницу с лозунгами. В следующих коммитах код удалили.	samber
-https://github.com/samber/awesome-prometheus-alerts	Определяет активный у пользователя язык и редиректит на страницу с лозунгами. В следующих коммитах код удалили.	samber
-https://github.com/mickael-kerjean/filestash	С помощью определения ip показывали видео обращение Зеленского. Сейчас убрали	mickael-kerjean
+https://github.com/fabpot/symfony	Шильдик #StandWithUkraine	fabpot
+https://github.com/symfony/symfony	Шильдик #StandWithUkraine	fabpot
+https://github.com/Jayfrown/symfony	Шильдик #StandWithUkraine	fabpot
+https://github.com/Leaflet/Leaflet	На сайте заменена главная страница: https://leafletjs.com/	IvanSanchez
+https://github.com/retejs/rete	#StandWithUkraine postinstall message	Ni55aN
+https://github.com/composer/packagist	Выводится шильдик #StandWithUkrane	Seldaek
+https://github.com/composer/composer	Выводится шильдик #StandWithUkrane	Seldaek
+https://github.com/composer/getcomposer.org	Выводится шильдик #StandWithUkrane	Seldaek
+https://github.com/Seldaek/symfony	Выводится шильдик #StandWithUkrane	Seldaek
+https://github.com/pnpm/pnpm.github.io	Баннер в поддержку украины	juanpicado
+https://github.com/verdaccio/verdaccio	Баннер в поддержку украины	juanpicado
+https://github.com/samber/powEUr	Определяет активный у пользователя язык и редиректит на страницу с лозунгами. В следующих коммитах код удалили.	samber
+https://github.com/nestjs/nest	В документации полит. лозунг "STOP RUSSIA'S INVASION OF UKRAINE"	kamilmysliwiec
+https://github.com/nestjs/schedule	В документации полит. лозунг "STOP RUSSIA'S INVASION OF UKRAINE"	kamilmysliwiec
+https://github.com/nestjs/docs.nestjs.com	В документации полит. лозунг "STOP RUSSIA'S INVASION OF UKRAINE"	kamilmysliwiec
 https://github.com/mickael-kerjean/filestash-website	С помощью определения ip показывали видео обращение Зеленского. Сейчас убрали	mickael-kerjean
+https://github.com/mickael-kerjean/filestash	С помощью определения ip показывали видео обращение Зеленского. Сейчас убрали	mickael-kerjean
