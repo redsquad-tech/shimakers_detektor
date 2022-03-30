@@ -10,7 +10,7 @@ const gitDSWithAuthors = datasetHandlers.addAuthor(gitDS)
 
 gitDSWithAuthors
     .then(async (dataset) => {
-        const result = await datasetHandlers.createResultDS(dataset);
+        const result = await datasetHandlers.getReposFromUserCommits(dataset);
 
         return result;
     })

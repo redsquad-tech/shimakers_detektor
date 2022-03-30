@@ -69,11 +69,11 @@ module.exports.addAuthor = async (gitDataset) => {
     return dataset.filter((r) => r).join('\n');
 }
 
-module.exports.createResultDS = async (fullDataset) => {
-    console.log('createResultDS');
+module.exports.getReposFromUserCommits = async (fullDataset) => {
+    console.log('getReposFromUserCommits');
 
     let authors = new Set();
-    let dataset = ['suspicious repo link\tcomment\tusername\n'];
+    let dataset = ['suspicious repo link\tcomment\tusername'];
 
     for (let row of fullDataset.split(/\n/)) {
         let repos;
@@ -87,13 +87,13 @@ module.exports.createResultDS = async (fullDataset) => {
             }
             if (index === 3) {
                 author = cell;
-                repos = !authors.has(author) && await GH_API_Handlers.getUserRepos(cell);
+                repos = !authors.has(author) && await GH_API_Handlers.getReposFromPushEvents(cell);
 
                 authors.add(author);
             }
         }
 
-        console.log('createResultDS author:', author);
+        console.log('getReposFromUserCommits author:', author);
 
         repos && repos.forEach((r) => dataset.push(r + '\t' + comment + '\t' + author));
     }

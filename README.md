@@ -30,7 +30,7 @@ Launches dataset creation steps:
 |:----------------------------------------------------:|:-----------------:|:-----------------:|
 | https://github.com/dangerous_user/dangerous_project **{explicitly: \t}**| dangerous because of ... \t|dangerous_user_name \n|
 
-4. datasetHandlers.createResultDS(dataset_with_authors: string): chooses actual repositories of the author and creates appropriate rows with the repo info in the dataset
+4. datasetHandlers.getReposFromUserCommits(dataset_with_authors: string): chooses actual push events which the author have done since 2022.02.24, picks target repositories of the push and creates appropriate rows with the repo info in the dataset
 
 `input:` string
 
