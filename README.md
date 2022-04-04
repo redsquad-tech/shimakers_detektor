@@ -10,7 +10,7 @@ install dependencies
 
 Launches the index.js file where readMalwareList() fuction executes steps of parsing.
 
-##### readMalwareList(csv_path: string)
+#### readMalwareList(csv_path: string)
 
 This is the main function. It reads initial raw.csv file created of [open dataset](https://docs.google.com/spreadsheets/d/1H3xPB4PgWeFcHjZ7NOPtrcya_Ua4jUolWm-7z9-jSpQ/htmlview?usp=sharing&pru=AAABf7rAbC0*P8SbG5KHN5WLt2JJJhoK-Q)
 
@@ -22,39 +22,37 @@ This is the main function. It reads initial raw.csv file created of [open datase
 | :-----------------: | :----------------: | :------------------------------: | :-------------------------------------------------: | :---------------------------------------------------------------: | :-----------------: |
 | 11.01.1991 11:11:11 |        ddos        |        dangerous_project         | https://github.com/dangerous_user/dangerous_project | "In case the sentence includes commas, should be in fouble qotes" | dangerous_user_name |
 
-`output:` list of object
+`output:` output is possible in two ways
 
-[
-{type: string, author: string, repo: string, PR: link, comment: string},
+- list of objects in condole stdout
 
-{type: string, author: string, repo: string, PR: link, comment: string}
-]
+> [ {type: string, author: string, repo: string, PR: link, comment: string},
+>
+> > {type: string, author: string, repo: string, PR: link, comment: string} ]
 
-Result is written to result.csv and in condole stdout
+- Result is written to result.csv file:
 
-csv file:
-| type | author | link_on_project_repo | link_on_PR | comment |
-| :--: | :-----: | :------------: | :---------------------------------------------------------------: | :-----------------: |
+| type |     author     |                link_on_project_repo                 |                  link_on_PR                   |                              comment                              |
+| :--: | :------------: | :-------------------------------------------------: | :-------------------------------------------: | :---------------------------------------------------------------: |
 | ddos | dangerous_user | https://github.com/dangerous_user/dangerous_project | https://github.com/project/repo/pull/{number} | "In case the sentence includes commas, should be in fouble qotes" |
 
 #### MAIN STEPS OF PARSING IN readMalwareList()
 
 1. datasetHandlers.getAuthor(issue_path: string)
 
-   `input:` link to the project/repo/commit
-   `output:` string with username
+`input:` link to the project/repo/commit
+
+`output:` string with username
 
 2. GH_API_Handlers.getPR(author: string, date_from: Date):
 
 `input:` author and date of the earliest pullRequestEvent
 
-`output:` List of objects with the information from pullRequestEvent which made author since date_from.
+`output:` List of objects with the information from pullRequestEvent which author made since date_from.
 
-{
-{repo: link_to_repo_where_PR_was_made_by_author, PR: link_to_PR},
-
-{repo: link_to_repo_where_PR_was_made_by_author, PR: link_to_PR},
-}
+> [ {repo: link_to_repo_where_PR_was_made_by_author, PR: link_to_PR},
+>
+> > {repo: link_to_repo_where_PR_was_made_by_author, PR: link_to_PR}, ]
 
 #### CUSTOM HANDLERS
 
