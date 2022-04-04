@@ -49,7 +49,7 @@ module.exports.getAuthorFromPull = async (parametrs) => {
 module.exports.getAuthorFromPullCommit = async (parametrs, commitSHA) => {
     try {
         let url =`https://api.github.com/repos/${parametrs}`;
-
+        
         const response = await getGHRequest(url);
 
         const data = response.data;
@@ -75,36 +75,86 @@ module.exports.getAuthorFromIssue = async (parametrs) => {
     catch (e) {console.log('getAuthorFromIssue is failed:\n', e.message)};
 }
 
+module.exports.getPR = async (username, date_from) => {
+    try {
+        let url = `https://api.github.com/users/${username}/events`;
+        
+        const result = [];
+        const response = await getGHRequest(url);
+        const data = response.data;
+
+        
+        for (let event of data) {
+            if (event.type === 'PullRequestEvent' && new Date(event.created_at) > date_from) {
+                result.push({repo: event.repo.name, PR: event.payload.pull_request.html_url});
+            }
+        }
+                
+        return result;
+    }
+    catch (e) {
+        console.log('getReposFromPushEvents faild', e.message);
+    }
+}
+
+/* Depricated */
+
+const getRepos = async (url) => {
+    try {
+        const urlFull = `${url}/events`;
+        const response = await getGHRequest(urlFull);
+        
+        return response.data;
+    }
+    
+    catch (e) {console.log('getRepos is failed:\n', e.message)};
+}
+
+const getCommits = async (commits, author) => {
+    try {
+        return commits.map((commit) => commit.author.name == author && commit.sha)
+    }
+    
+    catch (e) {console.log('getCommits is failed:\n', e.message)};
+}
+
 //  From pushEvent get repos with author's contribution
 module.exports.getInfoFromPushEvents = async (username, date_from) => {
     try {
         let url = `https://api.github.com/users/${username}/events`;
         
+        const result = [];
         const response = await getGHRequest(url);
         const data = response.data;
 
-        const pushEventInfo = data.reduce((result, event) => {
-            const branch = new RegExp(event.payload.ref);
-
-            // CHECK: is check branch.test(/master|main/) realy needed?
-            // if (event.type === 'PushEvent' && new Date(event.created_at) > date_from && branch.test(/main|master/)) {
+    
+        for (let event of data) {
             if (event.type === 'PushEvent' && new Date(event.created_at) > date_from) {
-                event.payload.commits.forEach((commit) => {
+                const name = event.payload.commits[0].author.name;
+
+                const repos = await getRepos(event.repo.url);
+                
+                for (let repoEvent of repos) {
+                    const branch = new RegExp(repoEvent.payload.ref);
                     
-                    // CHECK: one more request to check author?
-                    result.push({
-                        username: username,
-                        repo: `https://github.com/${event.repo.name}`, 
-                        commit: `https://github.com/${event.repo.name}/commit/${commit.sha}`,
-                    })
-                })
+                    if (repoEvent.type === 'PushEvent' && /main|master/.test(branch)) {
+                        const commitSHA = getCommits(repoEvent.payload.commits, name);
+                        console.log('commitSHA', commitSHA);
+                        commitSHA.forEach((SHA) => {
+                            
+                            result.push({
+                                username: username,
+                                repo: `https://github.com/${repoEvent.repo.name}`, 
+                                commit: `https://github.com/${event.repo.name}/commit/${SHA}`,
+                            })
+
+                        })
+                    }   
+                }
             }
+        }
 
-            return result;
-        }, [])
-
-
-        return pushEventInfo;
+        return result;
     }
     catch (e) {
         console.log('getReposFromPushEvents faild', e.message);
