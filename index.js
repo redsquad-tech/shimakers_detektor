@@ -6,10 +6,8 @@ const createCsvWriter = require('csv-writer').createObjectCsvWriter;
 const datasetHandlers = require('./handlers/datasetHandlers.js');
 const GH_API_Handlers = require('./handlers/GH_API_Handlers.js');
 
-const DS_RAW = 'raw_test.csv';
-const DS_RESULT = 'res_test.csv';
-// const DS_RAW = process.env.DS_RAW;
-// const DS_RESULT = process.env.DS_RESULT;
+const DS_RAW = process.env.DS_RAW;
+const DS_RESULT = process.env.DS_RESULT;
 const DATE_FROM = new Date(process.env.DATE_FROM);
 
 const resultHeaders = [
@@ -43,8 +41,9 @@ const readMalwareList = async (csv_path) => {
     
                 if (PRs) {
                     for (let pr of PRs) {
-                        results.push({type: data.type, author: author, repo: pr.repo, PR: pr.PR, comment: data.comment});
-                        await csvWriter.writeRecords([{type: data.type, author: author, repo: pr.repo, PR: pr.PR, comment: data.comment}]);   
+                        // TODO: add results global 
+                        results.push({type: data.type, author: author, repo: `https://github.com/${pr.repo}`, PR: pr.PR, comment: data.comment});
+                        await csvWriter.writeRecords([{type: data.type, author: author, repo: `https://github.com/${pr.repo}`, PR: pr.PR, comment: data.comment}]);   
                     }
                 }
             }    
@@ -56,10 +55,5 @@ const readMalwareList = async (csv_path) => {
     })
     
 }
-
-
-// const parse_shit = async (malware_csv, date_from) => {
-//   ... The same as readMalwareList() function
-// } 
 
 readMalwareList(path.join('datasets',  DS_RAW), DATE_FROM);

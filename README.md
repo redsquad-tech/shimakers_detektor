@@ -22,23 +22,18 @@ Launches dataset creation steps:
    `input:` link to the project/repo/commit
    `output:`username: string
 
-3. datasetHandlers.getRepoAndCommits(author: string, date_from: Date):
+3. GH_API_Handlers.getPR(author: string, date_from: Date):
    `input:` author: string, date_from: Date
 
-`output:` List of objects. Every object made of repo event info where author made a commit. Type of:
-{username: username,
-repo: `https://github.com/project/repo`,
-commit: `https://github.com/project/repo/commit/SHA`,
-}
+`output:` List of objects. Every object is made of repo pullRequestEvent where author pushed any commit. Type of:
+{repo: part_path, PR: link}
 
 4. Result is written to result.csv and in condole stdout:
    `output:` list of object type of:
    [
-   {type: string, author: string, repo: string, commit: string, data: string}
-   {type: string, author: string, repo: string, commit: string, data: string}
+   {type: string, author: string, repo: string, PR: link, comment: string}
+   {type: string, author: string, repo: string, PR: link, comment: string}
    ]
-
-5. fileHandlers.writeCSV(filename: string, dataset: string): writes the dataset in the csv file
 
 ### Required variables
 
