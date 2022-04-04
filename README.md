@@ -28,7 +28,7 @@ This is the main function. It reads initial raw.csv file created of [open datase
 
 > [ {type: string, author: string, repo: string, PR: link, comment: string},
 >
-> > {type: string, author: string, repo: string, PR: link, comment: string} ]
+> {type: string, author: string, repo: string, PR: link, comment: string} ]
 
 - Result is written to result.csv file:
 
@@ -52,7 +52,7 @@ This is the main function. It reads initial raw.csv file created of [open datase
 
 > [ {repo: link_to_repo_where_PR_was_made_by_author, PR: link_to_PR},
 >
-> > {repo: link_to_repo_where_PR_was_made_by_author, PR: link_to_PR}, ]
+> {repo: link_to_repo_where_PR_was_made_by_author, PR: link_to_PR}, ]
 
 #### CUSTOM HANDLERS
 
