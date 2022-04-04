@@ -25,9 +25,9 @@ module.exports.getAuthorFromCommit = async (parametrs) => {
 
         const response = await getGHRequest(url);
         const data = response.data;
-        let field = data?.author?.login ? data?.author?.login : data?.commit?.author?.name;
+        let author = data?.author?.login ? data?.author?.login : data?.commit?.author?.name;
 
-        return field;
+        return author;
     }
     
     catch (e) {console.log('getAuthorFromCommit is failed:\n', e.message)};
@@ -76,19 +76,35 @@ module.exports.getAuthorFromIssue = async (parametrs) => {
 }
 
 //  From pushEvent get repos with author's contribution
-module.exports.getReposFromPushEvents = async (username) => {
+module.exports.getInfoFromPushEvents = async (username, date_from) => {
     try {
         let url = `https://api.github.com/users/${username}/events`;
-        let repoList = new Set();
-
+        
         const response = await getGHRequest(url);
         const data = response.data;
 
-        const actualEvents = data.filter((event) =>  event.type === 'PushEvent' && new Date(event.created_at) > new Date("2022-02-24"))
+        const pushEventInfo = data.reduce((result, event) => {
+            const branch = new RegExp(event.payload.ref);
 
-        actualEvents.forEach((event) => repoList.add(`https://github.com/${event.repo.url.split('/').slice(-2).join('/')}`));
+            // CHECK: is check branch.test(/master|main/) realy needed?
+            // if (event.type === 'PushEvent' && new Date(event.created_at) > date_from && branch.test(/main|master/)) {
+            if (event.type === 'PushEvent' && new Date(event.created_at) > date_from) {
+                event.payload.commits.forEach((commit) => {
+                    
+                    // CHECK: one more request to check author?
+                    result.push({
+                        username: username,
+                        repo: `https://github.com/${event.repo.name}`, 
+                        commit: `https://github.com/${event.repo.name}/commit/${commit.sha}`,
+                    })
+                })
+            }
 
-        return repoList;
+            return result;
+        }, [])
+
+
+        return pushEventInfo;
     }
     catch (e) {
         console.log('getReposFromPushEvents faild', e.message);
