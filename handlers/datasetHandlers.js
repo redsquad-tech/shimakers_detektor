@@ -1,102 +1,58 @@
 const formatURLHandlers = require('../handlers/formatURLHandlers.js');
 const GH_API_Handlers = require('../handlers/GH_API_Handlers.js');
 
-module.exports.pickGitLinks = (rawDataset) => {    
-    console.log('pickGitLinks');
-
-    let dataset = rawDataset
-    .split(/\n/)
-        .map((row) => {
-            if (row.includes('github.com')) {
-                return row
-                .split(/\t/)
-                    .reduce((currentRow, cell, index) => {
-                        if (![0, 1].includes(index)) {
-                            const delimetr = [2, 3].includes(index) ? '\t' : '\n';
-                            currentRow = currentRow + cell + delimetr;
-                        }
-                        
-                        return currentRow;
-                }, '');
-            }
-        })
-        .filter((r) => r).join('\n');
-        
-    return dataset;
+module.exports.isGitLink = (link) => {   
+    try {
+        return link.includes('github.com')
+    } 
+    catch (error) {
+        console.log('isGitLink is failed', error.message);
+    }
 }
 
-module.exports.addAuthor = async (gitDataset) => {    
-    console.log('addAuthor');
-
-    let dataset = [];
-
-    for (let row of gitDataset.split(/\n/)) {
+module.exports.getAuthor = async (issue_path) => {    
+    try {
         let username;
         let url;
-
-        for (let [index, cell] of row.split(/\t/).entries()) {
-            if (index === 1) {
-                if ((/pull/).test(cell)) {
-                    if ((/commits/).test(cell)) {
-                        urlData = formatURLHandlers.formRequestURL(cell, 'pullCommit');
-                        username = await GH_API_Handlers.getAuthorFromPullCommit(urlData.commits, urlData.commitSHA);
-                    }
-                    else {
-                        url = formatURLHandlers.formRequestURL(cell, 'pulls');
-                        username = await GH_API_Handlers.getAuthorFromPull(url);
-                    }
-                }
-                else if ((/commit/).test(cell)) {
-                    url = formatURLHandlers.formRequestURL(cell, 'commits');
-                    username = await GH_API_Handlers.getAuthorFromCommit(url);
-                }
-                else if ((/issues/).test(cell)) {
-                    url = formatURLHandlers.formRequestURL(cell, 'issues');
-                    username = await GH_API_Handlers.getAuthorFromIssue(url);
-                }
-                else {
-                    username = cell.replace('https://github.com/', '').split('/')[0];
-                }
+                
+        if (issue_path.includes('pull')) {
+            if (issue_path.includes('commits')) {
+                urlData = formatURLHandlers.formRequestURL(issue_path, 'pullCommit');
+                username = await GH_API_Handlers.getAuthorFromPullCommit(urlData.commits, urlData.commitSHA);
+            }
+            else {
+                url = formatURLHandlers.formRequestURL(issue_path, 'pulls');
+                username = await GH_API_Handlers.getAuthorFromPull(url);
             }
         }
-        
-        if (username) {
-            row += '\t' + username;
-            dataset.push(row)
+        else if (issue_path.includes('commit')) {
+            url = formatURLHandlers.formRequestURL(issue_path, 'commits');
+            username = await GH_API_Handlers.getAuthorFromCommit(url);
         }
+        else if (issue_path.includes('issues')) {
+            url = formatURLHandlers.formRequestURL(issue_path, 'issues');
+            username = await GH_API_Handlers.getAuthorFromIssue(url);
+        }
+        else {
+            username = issue_path.replace('https://github.com/', '').split('/')[0];
+        }
+
+        console.log('getAuthor:', username);
+
+        return username;
     }
-        
-    return dataset.filter((r) => r).join('\n');
+    catch (error) {
+        console.log('getAuthor is failed', error.message);
+    }   
 }
 
-module.exports.getReposFromUserPush = async (fullDataset) => {
-    console.log('getReposFromUserPush');
-
-    let authors = new Set();
-    let dataset = ['suspicious repo link\tcomment\tusername'];
-
-    for (let row of fullDataset.split(/\n/)) {
-        let repos;
-        let comment;
-        let author;
-
-        for (let [index, cell] of row.split(/\t/).entries()) {
-            
-            if (index === 2) {
-                comment = cell;
-            }
-            if (index === 3) {
-                author = cell;
-                repos = !authors.has(author) && await GH_API_Handlers.getReposFromPushEvents(cell);
-
-                authors.add(author);
-            }
-        }
-
-        console.log('getReposFromUserPush author:', author);
-
-        repos && repos.forEach((r) => dataset.push(r + '\t' + comment + '\t' + author));
+module.exports.getRepoAndCommits = async (author, date_from) => {
+    try {
+        const info = await GH_API_Handlers.getInfoFromPushEvents(author, date_from);
+    
+        return info;    
     }
-
-    return dataset.filter((r) => r).join('\n');
+    catch (error) {
+        console.log('getRepoAndCommits is failed', error.message);
+    }
 }
