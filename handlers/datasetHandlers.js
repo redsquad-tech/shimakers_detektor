@@ -14,7 +14,7 @@ module.exports.getAuthor = async (issue_path) => {
     try {
         let username;
         let url;
-                
+        
         if (issue_path.includes('pull')) {
             if (issue_path.includes('commits')) {
                 urlData = formatURLHandlers.formRequestURL(issue_path, 'pullCommit');
@@ -46,6 +46,7 @@ module.exports.getAuthor = async (issue_path) => {
     }   
 }
 
+/* depricated */
 module.exports.getRepoAndCommits = async (author, date_from) => {
     try {
         const info = await GH_API_Handlers.getInfoFromPushEvents(author, date_from);
