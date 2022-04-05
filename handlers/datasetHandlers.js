@@ -15,7 +15,10 @@ module.exports.getAuthor = async (issue_path) => {
         let username;
         let url;
         
-        if (issue_path.includes('pull')) {
+        if (issue_path.includes('issues')) { 
+            return;
+        } 
+        else if (issue_path.includes('pull')) {
             if (issue_path.includes('commits')) {
                 urlData = formatURLHandlers.formRequestURL(issue_path, 'pullCommit');
                 username = await GH_API_Handlers.getAuthorFromPullCommit(urlData.commits, urlData.commitSHA);
@@ -28,10 +31,6 @@ module.exports.getAuthor = async (issue_path) => {
         else if (issue_path.includes('commit')) {
             url = formatURLHandlers.formRequestURL(issue_path, 'commits');
             username = await GH_API_Handlers.getAuthorFromCommit(url);
-        }
-        else if (issue_path.includes('issues')) {
-            url = formatURLHandlers.formRequestURL(issue_path, 'issues');
-            username = await GH_API_Handlers.getAuthorFromIssue(url);
         }
         else {
             username = issue_path.replace('https://github.com/', '').split('/')[0];
