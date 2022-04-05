@@ -26,15 +26,15 @@ This is the main function. It reads initial raw.csv file created of [open datase
 
 - list of objects in condole stdout
 
-> [ {type: string, author: string, repo: string, PR: link, comment: string},
+> [ {author: string, PR: string, type: string, link: string, comment: string},
 >
-> {type: string, author: string, repo: string, PR: link, comment: string} ]
+> {author: string, PR: string, type: string, link: string, comment: string} ]
 
 - Result is written to result.csv file:
 
-|  contributor   |              repo_with_contributor_PR              |                          contributor_PR                          | reason_for_inclusion_of_the_contributor_in_the_list |                       comment_to_the_reason                       |
-| :------------: | :------------------------------------------------: | :--------------------------------------------------------------: | :-------------------------------------------------: | :---------------------------------------------------------------: |
-| dangerous_user | https://github.com/project/possibly_dangerous_repo | https://github.com/project/possibly_dangerous_repo/pull/{number} |                        ddos                         | "In case the sentence includes commas, should be in double qotes" |
+|  contributor   |                          contributor_PR                          | reason_for_listing_contributor_to_malware |             harmfull_contribution_link              |                       comment_to_the_reason                       |
+| :------------: | :--------------------------------------------------------------: | :---------------------------------------: | :-------------------------------------------------: | :---------------------------------------------------------------: |
+| dangerous_user | https://github.com/project/possibly_dangerous_repo/pull/{number} |                   ddos                    | https://github.com/dangerous_user/dangerous_project | "In case the sentence includes commas, should be in double qotes" |
 
 #### MAIN STEPS OF PARSING IN readMalwareList()
 
@@ -48,11 +48,9 @@ This is the main function. It reads initial raw.csv file created of [open datase
 
 `input:` author and date since when pullRequestEvent is needed
 
-`output:` List of objects with the information from pullRequestEvent which author made since date_from.
+`output:` Array of strings with the pull requests links from pullRequestEvent which author made since date_from.
 
-> [ {repo: link_to_repo_where_PR_was_made_by_author, PR: link_to_PR},
->
-> {repo: link_to_repo_where_PR_was_made_by_author, PR: link_to_PR}, ]
+> [ link_to_PR, link_to_PR2, link_to_PR3 ]
 
 #### CUSTOM HANDLERS
 

@@ -12,9 +12,9 @@ const DATE_FROM = new Date(process.env.DATE_FROM);
 
 const resultHeaders = [
     {id: 'author', title: 'contributor'},
-    {id: 'repo', title: 'repo_with_contributor_PR'},
     {id: 'PR', title: 'contributor_PR'},
-    {id: 'type', title: 'reason_for_inclusion_of_the_contributor_in_the_list'},
+    {id: 'type', title: 'reason_for_listing_contributor_to_malware'},
+    {id: 'link', title: 'harmfull_contribution_link'},
     {id: 'comment', title: 'comment_to_the_reason'},
 ];
 
@@ -42,8 +42,8 @@ const readMalwareList = async (csv_path) => {
                 if (PRs) {
                     for (let pr of PRs) {
                         // TODO: add results global 
-                        results.push({author: author, repo: `https://github.com/${pr.repo}`, PR: pr.PR, type: data.type, comment: data.comment});
-                        await csvWriter.writeRecords([{type: data.type, author: author, repo: `https://github.com/${pr.repo}`, PR: pr.PR, comment: data.comment}]);   
+                        results.push({author: author, PR: pr.PR, type: data.type, comment: data.comment});
+                        await csvWriter.writeRecords([{author: author, PR: pr, type: data.type, link: data.link, comment: data.comment}]);   
                     }
                 }
             }    

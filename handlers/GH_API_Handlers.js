@@ -86,7 +86,7 @@ module.exports.getPR = async (username, date_from) => {
         
         for (let event of data) {
             if (event.type === 'PullRequestEvent' && new Date(event.created_at) > date_from) {
-                result.push({repo: event.repo.name, PR: event.payload.pull_request.html_url});
+                result.push(event.payload.pull_request.html_url);
             }
         }
                 
