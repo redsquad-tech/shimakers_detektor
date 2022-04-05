@@ -32,9 +32,9 @@ This is the main function. It reads initial raw.csv file created of [open datase
 
 - Result is written to result.csv file:
 
-| type |     author     |                link_on_project_repo                 |                  link_on_PR                   |                              comment                              |
-| :--: | :------------: | :-------------------------------------------------: | :-------------------------------------------: | :---------------------------------------------------------------: |
-| ddos | dangerous_user | https://github.com/dangerous_user/dangerous_project | https://github.com/project/repo/pull/{number} | "In case the sentence includes commas, should be in fouble qotes" |
+|  contributor   |              repo_with_contributor_PR              |                          contributor_PR                          | reason_for_inclusion_of_the_contributor_in_the_list |                       comment_to_the_reason                       |
+| :------------: | :------------------------------------------------: | :--------------------------------------------------------------: | :-------------------------------------------------: | :---------------------------------------------------------------: |
+| dangerous_user | https://github.com/project/possibly_dangerous_repo | https://github.com/project/possibly_dangerous_repo/pull/{number} |                        ddos                         | "In case the sentence includes commas, should be in double qotes" |
 
 #### MAIN STEPS OF PARSING IN readMalwareList()
 
@@ -46,7 +46,7 @@ This is the main function. It reads initial raw.csv file created of [open datase
 
 2. GH_API_Handlers.getPR(author: string, date_from: Date):
 
-`input:` author and date of the earliest pullRequestEvent
+`input:` author and date since when pullRequestEvent is needed
 
 `output:` List of objects with the information from pullRequestEvent which author made since date_from.
 
