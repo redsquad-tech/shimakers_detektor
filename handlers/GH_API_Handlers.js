@@ -15,7 +15,7 @@ let options = {
 const getGHRequest = (url) => {
     return axios
         .get(url, options)
-        .catch((e) => console.log('axios request has failed!\n', e.message));
+        .catch((e) => console.log('axios request has failed:\n', e.message));
 }
 
 // Get author
@@ -81,19 +81,20 @@ module.exports.getPR = async (username, date_from) => {
         
         const result = [];
         const response = await getGHRequest(url);
-        const data = response.data;
+        const data = response?.data;
 
-        
-        for (let event of data) {
-            if (event.type === 'PullRequestEvent' && new Date(event.created_at) > date_from) {
-                result.push(event.payload.pull_request.html_url);
-            }
+        if (data) {
+            for (let event of data) {
+                if (event.type === 'PullRequestEvent' && new Date(event.created_at) > date_from) {
+                    result.push(event.payload.pull_request.html_url);
+                }
+            }    
         }
-                
+        
         return result;
     }
     catch (e) {
-        console.log('getReposFromPushEvents faild', e.message);
+        console.log('getReposFromPushEvents faild:\n', e.message);
     }
 }
 
@@ -139,9 +140,8 @@ module.exports.getInfoFromPushEvents = async (username, date_from) => {
                     
                     if (repoEvent.type === 'PushEvent' && /main|master/.test(branch)) {
                         const commitSHA = getCommits(repoEvent.payload.commits, name);
-                        console.log('commitSHA', commitSHA);
+                        
                         commitSHA.forEach((SHA) => {
-                            
                             result.push({
                                 username: username,
                                 repo: `https://github.com/${repoEvent.repo.name}`, 
@@ -157,6 +157,6 @@ module.exports.getInfoFromPushEvents = async (username, date_from) => {
         return result;
     }
     catch (e) {
-        console.log('getReposFromPushEvents faild', e.message);
+        console.log('getReposFromPushEvents faild:\n', e.message);
     }
 }

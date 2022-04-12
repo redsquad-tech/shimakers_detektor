@@ -20,7 +20,6 @@ const resultHeaders = [
 
 
 const readMalwareList = async (csv_path) => {
-    let results = [];
     const authors = new Set();
 
     const readStream = fs.createReadStream(csv_path);
@@ -41,19 +40,12 @@ const readMalwareList = async (csv_path) => {
     
                 if (PRs) {
                     for (let pr of PRs) {
-                        // TODO: add results global 
-                        results.push({author: author, PR: pr.PR, type: data.type, comment: data.comment});
                         await csvWriter.writeRecords([{author: author, PR: pr, type: data.type, link: data.link, comment: data.comment}]);   
                     }
                 }
             }    
     })
     .on('error', (error) => console.log('Read file error:', error.message))
-    .on('end', async () => {    
-        // FIXME: results is empty because of async operations with data
-        process.stdout.write('\nEND OF WRITTING:\n' + results.toString() + '\n');
-    })
-    
 }
 
 readMalwareList(path.join('datasets',  DS_RAW), DATE_FROM);

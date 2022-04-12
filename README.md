@@ -6,9 +6,15 @@ Script index.js creates dataset with information about possibly dangerous projec
 
 install dependencies
 
+**NOTE:** to build the site main page need make `npm install -g csv2md`
+
 ##### npm start
 
 Launches the index.js file where readMalwareList() fuction executes steps of parsing.
+
+##### npm run buld
+
+Creates main page for the site in the buld folder
 
 #### readMalwareList(csv_path: string)
 
@@ -22,15 +28,7 @@ This is the main function. It reads initial raw.csv file created of [open datase
 | :-----------------: | :----------------: | :------------------------------: | :-------------------------------------------------: | :---------------------------------------------------------------: | :-----------------: |
 | 11.01.1991 11:11:11 |        ddos        |        dangerous_project         | https://github.com/dangerous_user/dangerous_project | "In case the sentence includes commas, should be in fouble qotes" | dangerous_user_name |
 
-`output:` output is possible in two ways
-
-- list of objects in condole stdout
-
-> [ {author: string, PR: string, type: string, link: string, comment: string},
->
-> {author: string, PR: string, type: string, link: string, comment: string} ]
-
-- Result is written to result.csv file:
+`output:` result.csv file:
 
 |  contributor   |                          contributor_PR                          | reason_for_listing_contributor_to_malware |             harmfull_contribution_link              |                       comment_to_the_reason                       |
 | :------------: | :--------------------------------------------------------------: | :---------------------------------------: | :-------------------------------------------------: | :---------------------------------------------------------------: |

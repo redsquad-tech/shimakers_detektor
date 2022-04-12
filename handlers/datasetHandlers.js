@@ -6,7 +6,7 @@ module.exports.isGitLink = (link) => {
         return link.includes('github.com')
     } 
     catch (error) {
-        console.log('isGitLink is failed', error.message);
+        console.log('isGitLink is failed:', error.message);
     }
 }
 
@@ -41,7 +41,7 @@ module.exports.getAuthor = async (issue_path) => {
         return username;
     }
     catch (error) {
-        console.log('getAuthor is failed', error.message);
+        console.log('getAuthor is failed:', error.message);
     }   
 }
 
@@ -53,6 +53,6 @@ module.exports.getRepoAndCommits = async (author, date_from) => {
         return info;    
     }
     catch (error) {
-        console.log('getRepoAndCommits is failed', error.message);
+        console.log('getRepoAndCommits is failed:', error.message);
     }
 }
