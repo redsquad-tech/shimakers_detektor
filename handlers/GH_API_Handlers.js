@@ -81,15 +81,14 @@ module.exports.getPR = async (username, date_from) => {
         
         const result = [];
         const response = await getGHRequest(url);
-        const data = response?.data;
+        const data = response.data;
 
-        if (data) {
-            for (let event of data) {
-                if (event.type === 'PullRequestEvent' && new Date(event.created_at) > date_from) {
-                    result.push(event.payload.pull_request.html_url);
-                }
-            }    
-        }
+        for (let event of data) {
+            if (event.type === 'PullRequestEvent' && new Date(event.created_at) > date_from) {
+                result.push(event.payload.pull_request.html_url);
+            }
+        }    
+    
         
         return result;
     }
