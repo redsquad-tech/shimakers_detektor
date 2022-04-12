@@ -14,7 +14,7 @@ fs.readFile(path.join('datasets', DS_RESULT), {encoding: 'utf-8'}, (error, data)
     if (error) throw error.message;
 
     csv2md.convert(data).then((res) => {
-        fs.writeFile(path.join('site', MARKDOWN), res, (err) => {
+        fs.writeFile(path.join(__dirname, MARKDOWN), res, (err) => {
             if (err) throw err.message;
             console.log('The file has been saved!');
           });    
