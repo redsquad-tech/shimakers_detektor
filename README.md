@@ -6,7 +6,7 @@ Script index.js creates dataset with information about possibly dangerous projec
 
 install dependencies
 
-**NOTE:** to build the site main page need make `npm install -g csv2md`
+**NOTE:** to build the site main page need make `npm install -g csv2html`
 
 ##### npm start
 
@@ -14,7 +14,7 @@ Launches the index.js file where readMalwareList() fuction executes steps of par
 
 ##### npm run buld
 
-Creates main page for the site in the buld folder
+Creates main page for the site in the build folder
 
 #### readMalwareList(csv_path: string)
 

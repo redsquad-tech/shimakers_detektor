@@ -1,3 +1,5 @@
+/* DEPRICATED: creates index.md page */
+
 const path = require('path');
 const fs = require('fs');
 const { Csv2md } = require('csv2md');
