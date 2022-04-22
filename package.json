@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "build": "csv2html datasets/result.csv > docs/index.html"
+    "build": "cp datasets/result.csv docs/_data"
   },
   "author": "",
   "license": "ISC",
@@ -13,8 +13,6 @@
     "axios": "^0.26.1",
     "csv-parser": "^3.0.0",
     "csv-writer": "^1.6.0",
-    "csv2html": "^0.0.1",
-    "csv2md": "^1.1.0",
     "dotenv": "^16.0.0"
   }
 }

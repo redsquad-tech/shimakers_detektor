@@ -11,11 +11,11 @@ const DS_RESULT = process.env.DS_RESULT;
 const DATE_FROM = new Date(process.env.DATE_FROM);
 
 const resultHeaders = [
-    {id: 'author', title: 'contributor'},
-    {id: 'PR', title: 'contributor_PR'},
-    {id: 'type', title: 'reason_for_listing_contributor_to_malware'},
-    {id: 'link', title: 'harmfull_contribution_link'},
-    {id: 'comment', title: 'comment_to_the_reason'},
+    {id: 'author', title: 'Автор'},
+    {id: 'PR', title: 'Потенциально опасный PR автора'},
+    {id: 'type', title: 'Тип исходного вредоносного вклада'},
+    {id: 'link', title: 'Исходный вредоносный вклад'},
+    {id: 'comment', title: 'Комментарий к исходному вредоносному вкладу'},
 ];
 
 

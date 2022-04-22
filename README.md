@@ -1,12 +1,10 @@
 # shimakers_detektor
 
-Script index.js creates dataset with information about possibly dangerous projects in which the harmfull users made a contribution through pull request
+Script index.js creates dataset with information about possibly harmfull projects in which the dangerous users made a contribution through pull request
 
 ##### npm install
 
 install dependencies
-
-**NOTE:** to build the site main page need make `npm install -g csv2html`
 
 ## USAGE
 
@@ -16,7 +14,23 @@ Launches the index.js file where readMalwareList() fuction executes steps of par
 
 ##### npm run buld
 
-Creates main page for the site in the build folder
+Moves dataset to the site folder
+
+### Required variables
+
+.env file in the root of the project should include:
+
+##### DS_RAW
+
+Name of the initial file in the datasets folder
+
+##### DS_RESULT
+
+Name of the final file in the datasets folder
+
+##### PAT
+
+Variable for GH API key (it is needed to increase limit of requsts per hour). Should be NOT expired
 
 ## DETAILS
 
@@ -61,19 +75,3 @@ This is the main function. It reads initial raw.csv file created of [open datase
 - formatURLHandlers.js module forms appropriate URL links for GET requests
 
 - GH_API_Handlers.js module is based on [github API](https://docs.github.com/en/rest) and executes GET requests and fetch properties from API responses which are needed in result dataset.
-
-### Required variables
-
-in .env file should be:
-
-##### DS_RAW
-
-Name of the initial file in the datasets folder
-
-##### DS_RESULT
-
-Name of the final file in the datasets folder
-
-##### PAT
-
-Variable for GH API key (it is needed to increase limit of requsts per hour). Should be NOT expired
