@@ -16,6 +16,12 @@ Launches the index.js file where readMalwareList() fuction executes steps of par
 
 Moves dataset to the site folder
 
+#### OR
+
+##### make
+
+Bulid the project
+
 ### Required variables
 
 .env file in the root of the project should include:
