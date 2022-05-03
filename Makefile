@@ -1,5 +1,14 @@
-docs/_data/result.csv : datasets/result.csv
+site : table
 	cp datasets/result.csv docs/_data
 
-datasets/result.csv : index.js
+table : clear
 	node index.js
+	
+clear : 
+	rm -f docs/_data/result.csv
+	rm -f datasets/result.csv
+	touch datasets/result.csv
+
+
+
+	
