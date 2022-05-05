@@ -6,23 +6,27 @@
             <a href="{{ site.github }}/{{ site.github_org }}/{{ site.github_repo }}">{{ site.github_org }}/{{ site.github_repo }}</a>
         </figcaption>
     </figure>
-
-    <p class="footer__base">© {{ site.year }}</p>
+    <div class="footer__base">
+        <p>© {{ site.license }}</p>    
+        <p>© {{ site.title }} {{ site.year }}</p>    
+    </div>
+    
 </footer>
 
 
 <style>
     .footer {
         display: flex;
-        justify-content: space-between;
-        padding: 20px 100px;
+        justify-content: center;
+        gap: 40px;
+        padding: 20px 75px;
     }
 
     .footer__figure {
         display: flex;
         align-items: center;
         gap: 10px;
-        height: 30px;
+        height: 20px;
     }
 
     .footer__figure-img {
