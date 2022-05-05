@@ -54,8 +54,7 @@ title: О проекте
 <script>
   window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
   formbutton("create", {
-    action: "https://formspree.io/f/xknypalp",
-    // action: "https://formspree.io/f/xqkngvza",
+    action: "https://formspree.io/f/xqkngvza",
     title: "Свяжитесь с нами",
     fields: [{
       name: "email",
