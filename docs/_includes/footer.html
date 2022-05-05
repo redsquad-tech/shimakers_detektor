@@ -1,0 +1,35 @@
+<hr />
+<footer class="footer">
+    <figure class="footer__figure">
+        <img src="{{ site.url_github_org_img }}" class="footer__figure-img" />
+        <figcaption>
+            <a href="{{ site.github }}/{{ site.github_org }}/{{ site.github_repo }}">{{ site.github_org }}/{{ site.github_repo }}</a>
+        </figcaption>
+    </figure>
+
+    <p class="footer__base">© {{ site.year }}</p>
+</footer>
+
+
+<style>
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 100px;
+    }
+
+    .footer__figure {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        height: 30px;
+    }
+
+    .footer__figure-img {
+        max-height: 100%;
+    }
+
+    .footer__base {
+        color: #8b949e;
+    }
+</style>
