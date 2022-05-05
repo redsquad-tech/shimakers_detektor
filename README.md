@@ -8,15 +8,17 @@ install dependencies
 
 ## USAGE
 
+#### 1 way
+
 ##### npm start
 
 Launches the index.js file where readMalwareList() fuction executes steps of parsing.
 
-##### npm run buld
+##### npm run build
 
 Moves dataset to the site folder
 
-#### OR
+#### 2 way
 
 ##### make
 
