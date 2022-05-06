@@ -48,6 +48,12 @@ title: О проекте
   ::-webkit-scrollbar-thumb {
     background: #888;
   }
+
+  @media screen and (max-width: 920px) {
+    .wrapper {
+      max-width: calc(100% - 64px) !important;
+    }
+  }
 </style>
 
 <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>

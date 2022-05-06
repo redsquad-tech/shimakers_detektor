@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "build": "cp datasets/result.csv docs/_data"
+    "build": "cp datasets/result.csv docs/_data && cp datasets/raw.csv docs/static"
   },
   "author": "",
   "license": "ISC",
