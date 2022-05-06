@@ -50,6 +50,10 @@ title: О проекте
   }
 
   @media screen and (max-width: 920px) {
+    body {
+      font-size: 0.5rem !important;
+    }
+
     .wrapper {
       max-width: calc(100% - 64px) !important;
     }
