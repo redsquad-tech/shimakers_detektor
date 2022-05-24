@@ -19,7 +19,7 @@ title: О проекте
       {% endif %}
 
       {% tablerow pair in row %}
-        {% if pair[0] == 'Потенциально опасный PR автора' %}
+        {% if pair[0] == 'Потенциально опасный PR автора' or pair[0] == 'Исходный вредоносный вклад' %}
           <a href="{{ pair[1] }}" target="_blank">{{ pair[1] }}</a>
           {% else %}
           {{ pair[1] }}
