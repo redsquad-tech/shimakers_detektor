@@ -1,10 +1,10 @@
 const path = require('path');
 const fs = require('fs');
 const csv = require('csv-parser');
-const createCsvWriter = require('csv-writer').createObjectCsvWriter;
 
 const datasetHandlers = require('./handlers/datasetHandlers.js');
 const GH_API_Handlers = require('./handlers/GH_API_Handlers.js');
+const createCsvWriter = require('csv-writer').createObjectCsvWriter;
 
 const DS_RAW = process.env.DS_RAW;
 const DS_RESULT = process.env.DS_RESULT;
@@ -36,7 +36,6 @@ const fetchAsyncData = async (data, table, authors) => {
 
 const readMalwareList = async (csv_path) => {
     let table = [];
-
     const authors = new Set();
 
     const readStream = fs.createReadStream(csv_path);

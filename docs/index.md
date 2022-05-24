@@ -3,7 +3,7 @@ layout: home
 title: О проекте
 ---
 
-На данной странице представлен список авторов проектов и коммитов в GitHub проекты, которые могут представлять опасность. <a href="/static/raw.csv" download>Источник</a> основан на публичном [датасете](https://docs.google.com/spreadsheets/d/1cfc4wXYpaImYxVy_0IXpYNzSrOIPUAhzWtj6s6hlVb0/edit#gid=2074850979).
+На данной странице представлен список авторов проектов и коммитов в GitHub проекты, которые могут представлять опасность. <a href="/static/raw.csv" download>Источник</a> основан на публичном [датасете](https://docs.google.com/spreadsheets/d/1H3xPB4PgWeFcHjZ7NOPtrcya_Ua4jUolWm-7z9-jSpQ/htmlview#).
 
 <h2>База</h2>
 
@@ -51,6 +51,15 @@ title: О проекте
 
   ::-webkit-scrollbar-thumb {
     background: #888;
+  }
+  
+  .formbutton::before {
+    display: block !important;
+    position: absolute;
+    content: "Добавить проблемный источник" !important;
+    white-space: nowrap;
+    right: 80px;
+    color: #8b949e;
   }
 
   @media screen and (max-width: 920px) {
