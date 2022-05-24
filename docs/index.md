@@ -19,7 +19,11 @@ title: О проекте
       {% endif %}
 
       {% tablerow pair in row %}
-        {{ pair[1] }}
+        {% if pair[0] == 'Потенциально опасный PR автора' %}
+          <a href="{{ pair[1] }}" target="_blank">{{ pair[1] }}</a>
+          {% else %}
+          {{ pair[1] }}
+        {% endif %}
       {% endtablerow %}
     {% endfor %}
 
@@ -102,3 +106,4 @@ title: О проекте
      }
   })
 </script>
+<script src="sort.js"></script>
