@@ -1,40 +1,29 @@
 const path = require('path');
 const fs = require('fs');
 const csv = require('csv-parser');
-
-const datasetHandlers = require('./handlers/datasetHandlers.js');
-const GH_API_Handlers = require('./handlers/GH_API_Handlers.js');
 const createCsvWriter = require('csv-writer').createObjectCsvWriter;
+
+const { fetchAsyncData } = require('./handlers/fetchHandler.js');
 
 const DS_RAW = process.env.DS_RAW;
 const DS_RESULT = process.env.DS_RESULT;
 const DATE_FROM = new Date(process.env.DATE_FROM);
 
+const rawHeaders = ['date', 'type', 'product', 'link', 'comment'];
 const resultHeaders = [
     {id: 'author', title: 'Автор'},
     {id: 'PR', title: 'Потенциально опасный PR автора'},
+    {id: 'created_at', title: 'Дата создания'},
+    {id: 'merged_at', title: 'Дата принятия'},
+    {id: 'stars', title: 'Рейтинг репозитория'},
+    {id: 'lang', title: 'Язык репозитория'},
     {id: 'type', title: 'Тип исходного вредоносного вклада'},
     {id: 'link', title: 'Исходный вредоносный вклад'},
     {id: 'comment', title: 'Комментарий к исходному вредоносному вкладу'},
 ];
 
-const fetchAsyncData = async (data, table, authors) => {
-    if (datasetHandlers.isGitLink(data.link)) {
-        const author = await datasetHandlers.getAuthor(data.link);
-        const PRs = !authors.has(author) && await GH_API_Handlers.getPR(author, DATE_FROM);
-
-        if (PRs && !authors.has(author)) {
-            const uniquePRs = Array.from(new Set(PRs)).sort((a, b) => a.localeCompare(b));
-            
-            for (let pr of uniquePRs) {
-                table.push({author: author, PR: pr, type: data.type, link: data.link, comment: data.comment})
-            }
-        }
-        authors.add(author);
-    }     
-};
-
 const readMalwareList = async (csv_path) => {
+    // TODO: get rid of global variables table and authors (?)
     let table = [];
     const authors = new Set();
 
@@ -48,9 +37,9 @@ const readMalwareList = async (csv_path) => {
         const promises = [];
         
         readStream
-        .pipe(csv({headers: ['date', 'type', 'product', 'link', 'comment'], separator: ',', escape: '"'}))
+        .pipe(csv({headers: rawHeaders, separator: ',', escape: '"'}))
         .on('data', async (data) => {
-            promises.push(fetchAsyncData(data, table, authors));
+            promises.push(fetchAsyncData(DATE_FROM, data, table, authors));
         })
         .on('error', (error) => {
             console.log('Read file error:', error.message);
@@ -62,10 +51,8 @@ const readMalwareList = async (csv_path) => {
 
             const tableSortedByType = table.sort((a, b) => a.type.localeCompare(b.type));
 
-            for (let row of tableSortedByType) {
-                await csvWriter.writeRecords([{author: row.author, PR: row.PR, type: row.type, link: row.link, comment: row.comment}]);   
-            }
-            
+            await csvWriter.writeRecords(tableSortedByType);
+
             console.log('END ======================\n', tableSortedByType);
         })
     })

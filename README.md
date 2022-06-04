@@ -56,25 +56,48 @@ This is the main function. It reads initial raw.csv file created of [open datase
 
 `output:` result.csv file:
 
-|  contributor   |                          contributor_PR                          | reason_for_listing_contributor_to_malware |             harmfull_contribution_link              |                       comment_to_the_reason                       |
-| :------------: | :--------------------------------------------------------------: | :---------------------------------------: | :-------------------------------------------------: | :---------------------------------------------------------------: |
-| dangerous_user | https://github.com/project/possibly_dangerous_repo/pull/{number} |                   ddos                    | https://github.com/dangerous_user/dangerous_project | "In case the sentence includes commas, should be in double qotes" |
+| contributor    |                          contributor_PR                          |    creation date     |      merge date      | stars | language | reason_for_listing_contributor_to_malware |             harmfull_contribution_link              |                       comment_to_the_reason                       |
+| :------------- | :--------------------------------------------------------------: | :------------------: | :------------------: | :---: | :------: | :---------------------------------------: | :-------------------------------------------------: | :---------------------------------------------------------------: |
+| dangerous_user | https://github.com/project/possibly_dangerous_repo/pull/{number} | 2022-05-23T23:10:58Z | 2022-05-30T23:52:08Z | 1000  |   PHP    |                   ddos                    | https://github.com/dangerous_user/dangerous_project | "In case the sentence includes commas, should be in double qotes" |
 
 #### MAIN STEPS OF PARSING IN readMalwareList()
 
-1. datasetHandlers.getAuthor(issue_path: string)
+1. fetchHandler.fetchAsyncData(date: Date, data: Object of strings, table: Array | Array of objects, authors: Set of authors)
+   `input:` date, data, table, authors
+   `output:` object with fields for writing to the result table (unsorted)
+   {
+   author: string,
+   PR: string,
+   created_at: string,
+   merged_at: string | null,
+   stars: number,
+   lang: string,
+   type: string,
+   link: string,
+   comment: string
+   }
+
+2. datasetHandlers.getAuthor(issue_path: string)
 
 `input:` link to the project/repo/commit
 
 `output:` string with username
 
-2. GH_API_Handlers.getPR(author: string, date_from: Date):
+3. GH_Handlers.getPullRequestsFromEvent(author: string, date_from: Date):
 
 `input:` author and date since when pullRequestEvent is needed
 
-`output:` Array of strings with the pull requests links from pullRequestEvent which author made since date_from.
+`output:` Array of objects with the pull requests info from pullRequestEvent which author made since date_from.
 
-> [ link_to_PR, link_to_PR2, link_to_PR3 ]
+> [
+
+    url: string,
+    created_at: string,
+    merged_at: string,
+    stars: string,
+    lang: string
+
+]
 
 #### CUSTOM HANDLERS
 
@@ -82,4 +105,4 @@ This is the main function. It reads initial raw.csv file created of [open datase
 
 - formatURLHandlers.js module forms appropriate URL links for GET requests
 
-- GH_API_Handlers.js module is based on [github API](https://docs.github.com/en/rest) and executes GET requests and fetch properties from API responses which are needed in result dataset.
+- GH_Handlers.js module is based on [github API](https://docs.github.com/en/rest) and executes GET requests and fetch properties from API responses which are needed in result dataset.

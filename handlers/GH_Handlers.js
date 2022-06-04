@@ -18,7 +18,21 @@ const getGHRequest = (url) => {
         .catch((e) => console.log('axios request has failed:\n', e.message));
 }
 
-// Get author
+const getRepoInfo = async (url) => {
+    try {
+        const response = await getGHRequest(url);
+        const data = response.data;
+
+        return {
+            stars: data.stargazers_count,
+            lang: data.language
+        };
+    }
+    catch (e) {
+        console.log('getRepoInfo faild:\n', e.message);
+    }
+}
+
 module.exports.getAuthorFromCommit = async (parametrs) => {
     try {
         let url =`https://api.github.com/repos/${parametrs}`;
@@ -51,7 +65,6 @@ module.exports.getAuthorFromPullCommit = async (parametrs, commitSHA) => {
         let url =`https://api.github.com/repos/${parametrs}`;
         
         const response = await getGHRequest(url);
-
         const data = response.data;
 
         const commit = data.filter((commit) => commit.sha === commitSHA)[0];
@@ -75,7 +88,7 @@ module.exports.getAuthorFromIssue = async (parametrs) => {
     catch (e) {console.log('getAuthorFromIssue is failed:\n', e.message)};
 }
 
-module.exports.getPR = async (username, date_from) => {
+module.exports.getPullRequestsFromEvent = async (username, date_from) => {
     try {
         let url = `https://api.github.com/users/${username}/events`;
         
@@ -85,77 +98,39 @@ module.exports.getPR = async (username, date_from) => {
 
         for (let event of data) {
             if (event.type === 'PullRequestEvent' && new Date(event.created_at) > date_from) {
-                result.push(event.payload.pull_request.html_url);
+                const repoInfo = await getRepoInfo(event.repo.url);
+                
+                const fullInfo = {
+                    url: event.payload.pull_request.html_url,
+                    created_at: event.payload.pull_request.created_at,
+                    merged_at: event.payload.pull_request.merged_at,
+                    stars: repoInfo.stars,
+                    lang: repoInfo.lang
+                };
+
+                result.push(fullInfo);
             }
         }    
-    
-        
-        return result;
-    }
-    catch (e) {
-        console.log('getReposFromPushEvents faild:\n', e.message);
-    }
-}
 
-/* Depricated */
-
-const getRepos = async (url) => {
-    try {
-        const urlFull = `${url}/events`;
-        const response = await getGHRequest(urlFull);
-        
-        return response.data;
-    }
-    
-    catch (e) {console.log('getRepos is failed:\n', e.message)};
-}
-
-const getCommits = async (commits, author) => {
-    try {
-        return commits.map((commit) => commit.author.name == author && commit.sha)
-    }
-    
-    catch (e) {console.log('getCommits is failed:\n', e.message)};
-}
-
-//  From pushEvent get repos with author's contribution
-module.exports.getInfoFromPushEvents = async (username, date_from) => {
-    try {
-        let url = `https://api.github.com/users/${username}/events`;
-        
-        const result = [];
-        const response = await getGHRequest(url);
-        const data = response.data;
-
-    
-        for (let event of data) {
-            if (event.type === 'PushEvent' && new Date(event.created_at) > date_from) {
-                const name = event.payload.commits[0].author.name;
-
-                const repos = await getRepos(event.repo.url);
+        // TODO: refactor complicated sorting logic
+        const uniquePRs = Array.from(new Set(result))
+            // Remove doubles with null merged_at field
+            .filter((elem, index) => {
+                let isNotDouble = true;
                 
-                for (let repoEvent of repos) {
-                    const branch = new RegExp(repoEvent.payload.ref);
-                    
-                    if (repoEvent.type === 'PushEvent' && /main|master/.test(branch)) {
-                        const commitSHA = getCommits(repoEvent.payload.commits, name);
-                        
-                        commitSHA.forEach((SHA) => {
-                            result.push({
-                                username: username,
-                                repo: `https://github.com/${repoEvent.repo.name}`, 
-                                commit: `https://github.com/${event.repo.name}/commit/${SHA}`,
-                            })
+                result.forEach((e, i) => {
+                    if (index !== i && elem.url === e.url)
+                        isNotDouble = elem.merged_at !== null
+                });
 
-                        })
-                    }   
-                }
-            }
-        }
+                return isNotDouble;
+            }) 
+            // Sort by url
+            .sort((a, b) => a.url.localeCompare(b.url));
 
-        return result;
+        return uniquePRs;
     }
     catch (e) {
-        console.log('getReposFromPushEvents faild:\n', e.message);
+        console.log('getPullRequestsFromEvent faild:\n', e.message);
     }
 }
