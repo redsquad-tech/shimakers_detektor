@@ -3,7 +3,7 @@ site : table
 	cp datasets/raw.csv docs/static
 
 table : clear
-	node index.js
+	node index.js --main && node index.js --social
 	
 clear : 
 	rm -f docs/_data/result.csv

@@ -1,5 +1,4 @@
 const axios = require('axios')
-require('dotenv').config();
 
 const PAT = process.env.PAT;
 
@@ -133,4 +132,19 @@ module.exports.getPullRequestsFromEvent = async (username, date_from) => {
     catch (e) {
         console.log('getPullRequestsFromEvent faild:\n', e.message);
     }
+}
+
+module.exports.getOrgansiations = async (username) => {
+    try {
+        let url =`https://api.github.com/users/${username}/orgs`;
+
+        const response = await getGHRequest(url);
+        const data = response.data;
+
+        const orgs = data.map((org) => org.login)
+
+        return orgs;
+    }
+    
+    catch (e) {console.log('getAuthorFromIssue is failed:\n', e.message)};
 }

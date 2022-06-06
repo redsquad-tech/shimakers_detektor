@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start:main": "node index.js --main",
+    "start:social": "node index.js --social",
     "start": "node index.js",
     "build": "cp datasets/result.csv docs/_data && cp datasets/raw.csv docs/static"
   },
