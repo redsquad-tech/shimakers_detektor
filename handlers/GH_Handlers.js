@@ -148,3 +148,18 @@ module.exports.getOrgansiations = async (username) => {
     
     catch (e) {console.log('getAuthorFromIssue is failed:\n', e.message)};
 }
+
+module.exports.getFollowers = async (username) => {
+    try {
+        let url =`https://api.github.com/users/${username}/followers`;
+
+        const response = await getGHRequest(url);
+        const data = response.data;
+
+        const orgs = data.map((org) => org.login)
+
+        return orgs;
+    }
+    
+    catch (e) {console.log('getAuthorFromIssue is failed:\n', e.message)};
+}

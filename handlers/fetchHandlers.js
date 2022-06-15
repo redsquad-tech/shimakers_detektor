@@ -40,12 +40,13 @@ module.exports.fetchSocial = async (data, table, authors) => {
         authors.add(author);
 
         const orgs = await GH_Handlers.getOrgansiations(author);
+        const followers = await GH_Handlers.getFollowers(author);
 
         if (orgs?.length > 0) {
             const tableInfo = {
                 author: author,
                 organizations: orgs,
-                // friends: 'test'
+                friends: followers
             };
             
             table.push(tableInfo);
