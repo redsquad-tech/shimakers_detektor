@@ -1,0 +1,37 @@
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+title: опенсорсбезугроз
+# description: >-
+#   База контрибютов в пректы GitHub от потенциально опасных пользователей
+baseurl: ""
+url: "www.опенсорсбезугроз.рф"
+url_github_org_img: https://avatars.githubusercontent.com/u/6589991?s=400&u=884edc525b97c35fcf6c5ee4308831bb8bada2e5&v=4
+github: https://github.com
+github_org: fastlawIo
+github_repo: shimakers_detektor
+license: GNU General Public License
+year: 2022
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

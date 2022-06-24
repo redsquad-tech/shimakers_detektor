@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start:main": "node index.js --main",
+    "start:social": "node index.js --social",
     "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "cp datasets/result.csv docs/_data && cp datasets/raw.csv docs/static"
   },
   "author": "",
   "license": "ISC",
@@ -13,6 +15,7 @@
     "axios": "^0.26.1",
     "csv-parser": "^3.0.0",
     "csv-writer": "^1.6.0",
-    "dotenv": "^16.0.0"
+    "dotenv": "^16.0.0",
+    "xlsx": "^0.18.5"
   }
 }
