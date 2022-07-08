@@ -64,7 +64,7 @@ const Index = ({ file }) => {
 
 
 export const getStaticProps = async () => {
-    const file_path = path.join('public', 'result_test.csv');
+    const file_path = path.join('public', 'result.csv');
     
     const file = new Promise((resolve, reject) => {
         fs.readFile(file_path, 'utf8', (err, data) => {

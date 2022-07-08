@@ -2,13 +2,14 @@ import cl from '../styles/Main.module.css';
 import Link from 'next/link';
 
 const Main = ({ file }) => {
+    const source_URL = '/raw.csv';
     const dataset_URL = 'https://docs.google.com/spreadsheets/d/1H3xPB4PgWeFcHjZ7NOPtrcya_Ua4jUolWm-7z9-jSpQ/htmlview#';
     const table_headers = Object.keys(file[0]);
     
     return (
         <>
             <h1>О проекте</h1>
-            <p>На данной странице представлен список авторов проектов и коммитов в GitHub проекты, которые могут представлять опасность. Источник основан на публичном <Link href={dataset_URL}><a>датасете</a></Link>.</p> 
+            <p>На этой странице представлен список авторов проектов и коммитов в GitHub проекты, которые могут представлять опасность. <Link href={source_URL} download><a>Источник</a></Link> основан на публичном <Link href={dataset_URL}><a>датасете</a></Link>.</p> 
             <h2>Действия, совершенные опасными авторами</h2>
 
             <section className={cl.main__tableWrapper}>
