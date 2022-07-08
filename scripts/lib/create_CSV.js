@@ -1,7 +1,7 @@
 import fs from 'fs';
 import { default as csv_parser } from 'csv-parser';
 import { createObjectCsvWriter as csv_writer} from 'csv-writer';
-import sort_by_alphabet from '../utils/sort.js';
+import { sort_by_alphabet } from '../utils/sort.js';
 
 const create_CSV = async (raw_path, result_path, result_headers, raw_headers, async_table_creator) => {
     // TODO: get rid of global variables table and authors (?)

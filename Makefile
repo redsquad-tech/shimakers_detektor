@@ -1,16 +1,15 @@
 site : table
-	cp datasets/result.csv docs/_data
-	cp datasets/raw.csv docs/static
+	cp datasets/result.csv site/public
+	cp datasets/raw.csv site/public
 
 table : clear
-	node scripts/suspicious_table_creator.js && node scripts/dependancies_table_creator.js
+	node scripts/suspicious_table_creator.js && node scripts/dependencies_table_creator.js
 	
 clear : 
-	rm -f docs/_data/result.csv
+	rm -f site/public/result.csv
+	rm -f site/public/raw.csv
 	rm -f datasets/result.csv
-	rm -f docs/static/raw.csv
-	touch datasets/result.csv
-
+	rm -f datasets/result_dependencies.csv
 
 
 	
