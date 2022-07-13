@@ -1,0 +1,32 @@
+.main__tableWrapper {
+    overflow: scroll;
+    max-width: 100%;
+    max-height: 100vh;
+}    
+
+.main__tableWrapper::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+.main__tableWrapper::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+.main__tableWrapper::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+.main__table tr:nth-child(odd) {
+    background-color: #f7f7f7;
+}
+
+.main__table th, .main__table td {
+    padding: 10px 16px;
+    border: 1px solid #dedede; 
+}
+
+.main__table th {
+    font-weight: bold;
+    background-color: #f0f0f0;
+}
