@@ -120,12 +120,12 @@ parser csv files to pysec or cve-format
 ##### 3. Prepare folder for new CVE-files OR PYSEC-files (e.g. './PYSEC/')
 
 ##### 4. Run in terminal
-### e.g. PYSEC files 
+##### e.g. PYSEC files 
 ```python
 python3 csv2format.py pysec './PYSEC/' './csv/1.csv' './csv/2.csv' './csv/3.csv' './csv/4.csv' './csv/5.csv' './csv/6.csv' './csv/7.csv'
 ```
 
-### e.g. CVE files 
+##### e.g. CVE files 
 ```python
 python3 csv2format.py cve './CVE/' './csv/1.csv' './csv/2.csv' './csv/3.csv' './csv/4.csv' './csv/5.csv' './csv/6.csv' './csv/7.csv'
 ```
