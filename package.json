@@ -4,13 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start:main": "node index.js --main",
-    "start:social": "node index.js --social",
-    "start": "node index.js",
-    "build": "cp datasets/result.csv docs/_data && cp datasets/raw.csv docs/static"
+    "start:s": "node scripts/suspicious_table_creator.js",
+    "start:d": "node scripts/dependencies_table_creator.js",
+    "start": "node scripts/suspicious_table_creator.js && node scripts/dependencies_table_creator.js",
+    "build": "cp datasets/result.csv site/public && cp datasets/raw.csv site/public"
   },
   "author": "",
   "license": "ISC",
+  "type": "module",
   "dependencies": {
     "axios": "^0.26.1",
     "csv-parser": "^3.0.0",

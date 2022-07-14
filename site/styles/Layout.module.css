@@ -1,0 +1,36 @@
+.layout__header, .layout__children, .layout__footer {
+    padding: 20px 75px;
+}
+
+.layout__header, .layout__footer {
+    color: #8b949e;
+}
+
+.layout__header {
+    border-bottom: 1px solid;
+}
+
+.layout__header h2 {
+    margin: 0;
+}
+
+.layout__footerFigure {
+    display: flex;
+    gap: 10px;
+    height: 20px;
+}
+
+.layout__footerFigureImg {
+    max-height: 100%;
+}
+
+.layout__footerLicenses {
+    display: block;
+    margin: 15px 0;
+}
+
+@media screen and (max-width: 920px) {
+    .layout__footer, .layout__header {
+        padding: 20px 32px;
+    }
+}
