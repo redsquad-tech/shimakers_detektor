@@ -35,6 +35,20 @@ The file should contain columns:
 - `public/result.csv` to render table with author information
 - `public/raw.csv` to download source file
 
+### scripts/lib
+
+#### Author
+
+Gets author from GitHub link
+
+#### scripts/lib/Suspicious.js
+
+Gets information about author
+
+#### scripts/lib/Dependancies.js
+
+Gets followers and organisations connected with author
+
 ## USAGE
 
 ##### npm install
@@ -76,17 +90,3 @@ Name of the file for the social graph
 ##### PAT
 
 GitHub Personal Access Token is needed to increase limit of requsts per hour
-
-### scripts/lib
-
-#### Author
-
-Gets author from GitHub link
-
-#### scripts/lib/Suspicious.js
-
-Gets information about author
-
-#### scripts/lib/Dependancies.js
-
-Gets followers and organisations connected with author
