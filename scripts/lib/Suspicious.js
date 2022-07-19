@@ -69,7 +69,6 @@ class Suspicious {
         for (let event of PR_events) {
             const stars_and_lang = await this._set_api_stars_and_lang_by_repo(event.repo.url);
 
-            // TODO: check if stars_and_lang exists
             const row = {
                 author: this.username,
                 PR: event.payload.pull_request.html_url,

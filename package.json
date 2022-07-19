@@ -2,7 +2,7 @@
   "name": "z",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "",
   "scripts": {
     "start:s": "node scripts/suspicious_table_creator.js",
     "start:d": "node scripts/dependencies_table_creator.js",

@@ -1,5 +1,5 @@
 import request_api from '../../utils/request_api.js';
-import Author_Path from './Author_path.js';
+import Author_Path from './_Author_path.js';
 
 class Author {
     author = '';

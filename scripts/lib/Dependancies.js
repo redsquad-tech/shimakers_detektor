@@ -29,15 +29,15 @@ class Dependancies {
             const response = await request_api(url);
             const data = response.data;
     
-            const orgs = data.map((org) => org.login)
+            const friends = data.map((friend) => friend.login)
     
-            return orgs;
+            return friends;
         }
         
         catch (e) {console.log(`Dependancies - _set_api_followers is failed:\n${e.message}\n`)};
     }
 
-    async _set_details() {
+    async _set_full_details() {
         const orgs = await this._set_api_organisations(this.username);
         const followers =  await this._set_api_followers(this.username);
 
@@ -49,9 +49,21 @@ class Dependancies {
     }
 
     async get_details() {
-        await this._set_details();
+        await this._set_full_details();
 
         return this.details_row;
+    }
+   
+    async get_friends() {
+        const friends = await this._set_api_followers(this.username);
+
+        return friends;
+    }
+    
+    async get_orgs() {
+        const orgs = await this._set_api_organisations(this.username);
+
+        return orgs;
     }
 }
 
